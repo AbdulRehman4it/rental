@@ -1,288 +1,630 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Head
-  </title>
-  <link rel="stylesheet" href="./css/style.css">
- </head>
- <body class="bg-black text-white">
-  <!-- Header -->
-  <header class="bg-green-900 p-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <a class="text-white text-lg font-bold" href="#">
-     LuckyMedia
-    </a>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Services
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Portfolio
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Blogs
-       </a>
-      </li>
-     </ul>
-    </nav>
-    <a class="bg-green-300 text-black px-4 py-2 rounded hover:bg-green-400" href="#">
-     Contact Us Today
-    </a>
-   </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="text-center p-20">
-   <h1 class="text-4xl font-bold mb-4">
-    Unleashing Triumph Through Precision in Strategic
-    <span class="text-green-400">
-     Marketing Excellence
-    </span>
-   </h1>
-   <a class="bg-green-300 text-black px-6 py-3 inline-block rounded hover:bg-green-400" href="#">
-    Book A Consultation
-   </a>
-  </section>
-  <!-- About Us Section -->
-  <section class="bg-green-900 p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     About Us
-    </h2>
-    <div class="flex justify-between">
-     <div class="w-1/2 pr-4">
-      <p class="mb-4">
-       At Lucky Media, We Believe In The Power Of Creativity, Innovation, And Strategic Thinking.
-      </p>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Join Us Today
-      </a>
-     </div>
-     <div class="w-1/2 pl-4">
-      <div class="mb-6">
-       <h3 class="text-2xl font-bold mb-2">
-        Our Mission
-       </h3>
-       <p>
-        Our mission is simply yet profound – to help our clients stand out in a crowded digital world. We thrive on challenges, turning obstacles into opportunities and dreams into reality.
-       </p>
-      </div>
-      <div>
-       <h3 class="text-2xl font-bold mb-2">
-        Our Values
-       </h3>
-       <p>
-        At the core of Lucky Media are values that drive our every action, integrity, and a relentless pursuit of excellence are the pillars upon which we build lasting partnerships with our clients.
-       </p>
-      </div>
-     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <!-- slider -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+  
+
+    <title>Search Result</title>
+</head>
+<body class="bg-gray-100">
+    <!-- hero section -->
+    <section >
+        <div class="px-10">
+            <div>
+                <h1 class="text-7xl font-light text-gray-800">Your Property <span class="relative font-bold italic">
+                    <span class="absolute inset-0 bg-cover bg-center rounded-md" style="background-image: url('https://source.unsplash.com/100x30/?interior');"></span>
+                    <span class="relative">Matches</span>
+                </span></h1>
+                <p class="text-[#838383] text-2xl mt-2">Browse and explore the properties that fit your criteria. <span class="font-semibold text-[#3B3B3B]">Perfect matches</span> are just a click away.</p>
+            </div>
+            
+            <div class="bg-white shadow-md rounded-lg p-4 mt-6 flex flex-col md:flex-row gap-4">
+                
+                <select class="flex-1 p-1 border rounded-full bg-[#EEEEEE] text-[#838383]">
+                    <option>Location</option>
+                </select>
+                <select class="flex-1 p-1 border rounded-full bg-[#EEEEEE] text-[#838383]">
+                    <option>Budget</option>
+                </select>
+                <select class="flex-1 p-1 border rounded-full bg-[#EEEEEE] text-[#838383]">
+                    <option>Property Type</option>
+                </select>
+               
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-32 py-3 rounded-lg">Search</button>
+            </div>
+            
+            <div class="mt-6">
+                <h3 class="text-gray-700 font-medium">Current Search</h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Location: San Francisco, CA <button class="ml-2 text-red-500">&times;</button></span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Budget: $1,000 - $1,500 per month <button class="ml-2 text-red-500">&times;</button></span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Property Type: Apartment <button class="ml-2 text-red-500">&times;</button></span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Search Radius: Within 5 miles <button class="ml-2 text-red-500">&times;</button></span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Amenities: Pet Friendly, Parking Available, In-unit Laundry <button class="ml-2 text-red-500">&times;</button></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- cardsss -->
+    <section>
+        
+        <div class="px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card1.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Charming 1 Bedroom Loft</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span> 1 Bed, 1 Bath, Exposed Brick, Rooftop Access</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span> Brooklyn, NY - Williamsburg</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$950/month</p>
+                             <!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center  gap-4 border border-yellow-400 text-yellow-500  lg:px-10 px-6 py-2 rounded-lg lg:text-sm text-[12px] font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card2.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Modern 3-Bedroom Condo</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span> 3 Beds, 2 Baths, Pool, Gym, Secure Parking</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>San Francisco, CA - Mission Bay</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$2,500/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card3.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Spacious 4-Bedroom House   </h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span> 4 Beds, 3 Baths, Pet Friendly, Backyard</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>Austin, TX - Barton Hills</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$3,300/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card4.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Elegant Studio Apartment</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span>Studio, 1 Bath, In-Unit Laundry, Wi-Fi Included</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>Chicago, IL - Lincoln Park</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$1,100/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+               
+               
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10 gap-6">
+                <!-- Card -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card5.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Cozy 2-Bedroom Duplex</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span>2 Beds, 1.5 Baths, Hardwood Floors, Balcony</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>Seattle, WA - Capitol Hill</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$1,400/month</p>
+                         <!-- icon button -->
+
+                        <div class="flex items-center gap-4 md:gap-2 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 md:px-8 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card6.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Luxury 2-Bedroom Apartment</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span>2 Beds, 2 Baths, Beachfront, Pool Access</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>Miami, FL - South Beach</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$3,300/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card7.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Sunny 1-Bedroom Flat</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span>1 Bed, 1 Bath, Close to Public Transport, Parking</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span>Los Angeles, CA - Santa Monica</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$1,200/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                    <img src="./image/card8.png" alt="Property Image" class="w-full rounded-2xl h-auto object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Boutique 2-Bedroom Suite</h3>
+                        <p class="text-sm pt-4 py-2 text-[#838383]"><span class="text-[#3B3B3B] text-[16px]">Key Features:</span>2 Beds, 2 Baths, Historic Building, Modern Kitchen</p>
+                        <div class="flex text-[#3B3B3B] text-sm items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="text-[#838383] text-sm"><span class="text-[#3B3B3B]">Location:</span> Boston, MA - Back Bay</p>
+                        </div>
+                        <p class="text-2xl pt-3 text-[#3B3B3B] font-bold mt-2">$1,750/month</p>
+<!-- icon button -->
+
+                        <div class="flex items-center gap-4 pt-4">
+                            <!-- View Details Button -->
+                            <button class="flex items-center gap-4 border border-yellow-400 text-yellow-500 px-10 py-2 rounded-lg text-sm font-medium hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M12 4.5c-7.5 0-10.5 7.5-10.5 7.5S4.5 19.5 12 19.5 22.5 12 22.5 12 19.5 4.5 12 4.5zm0 3.75a3.75 3.75 0 110 7.5 3.75 3.75 0 010-7.5z"
+                                />
+                              </svg>
+                              View Details
+                            </button>
+                          
+                            <!-- Bookmark Button -->
+                            <button class="p-2 border border-yellow-400 text-yellow-500 rounded-lg hover:bg-yellow-100 transition">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="yellow"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M5.25 3.75h13.5a1.5 1.5 0 011.5 1.5v15l-7.5-3.75-7.5 3.75v-15a1.5 1.5 0 011.5-1.5z"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+               
+                <!-- Repeat for other cards -->
+            </div>
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="px-3 py-1 bg-gray-300 rounded">&lt;</button>
+                <button class="px-3 py-1 bg-yellow-500 text-white rounded">1</button>
+                <button class="px-3 py-1 bg-gray-300 rounded">2</button>
+                <button class="px-3 py-1 bg-gray-300 rounded">3</button>
+                <button class="px-3 py-1 bg-gray-300 rounded">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+  <!-- Swiper -->
+  <section>
+    <div class="px-8 pt-32">
+      <h1 class="text-[#111111] xl:text-6xl md:text-5xl text-4xl  text-center py-6">Hear What Our Users Have to Say</h1>
+      <p class="text-[#8F8F8F] text-base  text-center">Their experiences reflect our commitment to delivering exceptional service and seamless connections. Explore these <br> testimonials and see how we're making a difference in people’s lives.</p>
     </div>
-   </div>
-  </section>
-  <!-- Services Section -->
-  <section class="p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Services
-    </h2>
-    <p class="mb-10">
-     From digital strategy to creative campaigns, we offer a full spectrum of marketing services tailored to your business needs
-    </p>
-    <div class="grid grid-cols-2 gap-10">
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Search Engine Optimization" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-w2EiQKlHe2ppLwtn6AZ8ZKVE.png?st=2024-02-02T05%3A57%3A00Z&amp;se=2024-02-02T07%3A57%3A00Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-02T02%3A03%3A03Z&amp;ske=2024-02-03T02%3A03%3A03Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=zCx6tf0zrYnLaK67q56RQ9LTg1hF6ljHHfXaII7HE/0%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Search Engine Optimization
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Social Media Marketing" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-rQQ3oCZ95c14VtxwFm4chKf8.png?st=2024-02-02T05%3A56%3A59Z&amp;se=2024-02-02T07%3A56%3A59Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-01T22%3A43%3A09Z&amp;ske=2024-02-02T22%3A43%3A09Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=tQ9ArF/%2BwrSkiv%2BCX25kHeXwpGYDJ38SUIOUkbLaPWg%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Social Media Marketing
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Social Media Marketing" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-rQQ3oCZ95c14VtxwFm4chKf8.png?st=2024-02-02T05%3A56%3A59Z&amp;se=2024-02-02T07%3A56%3A59Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-01T22%3A43%3A09Z&amp;ske=2024-02-02T22%3A43%3A09Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=tQ9ArF/%2BwrSkiv%2BCX25kHeXwpGYDJ38SUIOUkbLaPWg%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Social Media Marketing
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Search Engine Optimization" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-w2EiQKlHe2ppLwtn6AZ8ZKVE.png?st=2024-02-02T05%3A57%3A00Z&amp;se=2024-02-02T07%3A57%3A00Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-02T02%3A03%3A03Z&amp;ske=2024-02-03T02%3A03%3A03Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=zCx6tf0zrYnLaK67q56RQ9LTg1hF6ljHHfXaII7HE/0%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Search Engine Optimization
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
+    <div class="swiper mySwiper px-8 py-20">
+      <div class="swiper-wrapper flex  gap-2">
+        <!-- card 1 -->
+        <div class="swiper-slide">
+             <div class="w-auto bg-white shadow-lg rounded-2xl p-6 text-center">
+            <img src="./image/dp1.png" alt="Profile" class="w-20 h-20 rounded-full mx-auto border-4 border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-800 mt-4">Mark Chen</h2>
+            <p class="text-gray-500 text-sm">Software Developer</p>
+            <p class="text-gray-600 mt-3">I was skeptical about finding a roommate online, but the swipe to match feature was fantastic. I met a roommate who shares my interests and we’ve been great friends ever since!</p>
+            <div class="flex justify-center mt-4 space-x-1 text-yellow-400">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
     </div>
-   </div>
-  </section>
-  <!-- Portfolio Section -->
-  <section class="bg-green-900 p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Portfolio
-    </h2>
-    <p class="mb-10">
-     Explore the projects that have defined our journey and transformed the fortunes of our clients
-    </p>
-    <a class="text-green-300 hover:text-green-400 mb-10 inline-block" href="#">
-     Explore Our Portfolio
-    </a>
-    <div class="grid grid-cols-2 gap-10">
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       01
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       02
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       03
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       04
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Contact Section -->
-  <section class="p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Let's Connect And Ignite Possibilities
-    </h2>
-    <form class="w-full max-w-lg mx-auto">
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3 mb-6 md:mb-0">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Your Name" type="text"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Email" type="email"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-         <option>
-          Select Service
-         </option>
-         <option>
-          Option 1
-         </option>
-         <option>
-          Option 2
-         </option>
-         <option>
-          Option 3
-         </option>
-        </select>
+
+    <!-- card 2 -->
+    <div class="swiper-slide">
+        <div class="w-auto bg-white shadow-lg rounded-2xl p-6 text-center">
+       <img src="./image/dp2.png" alt="Profile" class="w-20 h-20 rounded-full mx-auto border-4 border-gray-200">
+       <h2 class="text-lg font-semibold text-gray-800 mt-4">Emily Johnson</h2>
+       <p class="text-gray-500 text-sm">Recent Graduate</p>
+       <p class="text-gray-600 mt-3">Finding a new apartment was so easy with this platform! The advanced search tools let me filter for exactly what I needed, and the real-time notifications kept me updated on new listings. It’s truly a game-changer!</p>
+       <div class="flex justify-center mt-4 space-x-1 text-yellow-400">
+           <span>&#9733;</span>
+           <span>&#9733;</span>
+           <span>&#9733;</span>
+           <span>&#9733;</span>
+           <span>&#9733;</span>
        </div>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Budget Range" type="text"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Project Description"></textarea>
-      </div>
-     </div>
-     <div class="flex flex-wrap">
-      <div class="w-full px-3 text-center">
-       <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">
-        Submit
-       </button>
-      </div>
-     </div>
-    </form>
    </div>
+</div>
+
+<!-- card 3 -->
+<div class="swiper-slide">
+    <div class="w-auto bg-white shadow-lg rounded-2xl p-6 text-center">
+   <img src="./image/DP3.png" alt="Profile" class="w-20 h-20 rounded-full mx-auto border-4 border-gray-200">
+   <h2 class="text-lg font-semibold text-gray-800 mt-4">Samantha Lee</h2>
+   <p class="text-gray-500 text-sm">Designer</p>
+   <p class="text-gray-600 mt-3">The secure communication aspect really gave me peace of mind when discussing terms with potential landlords. I felt safe and supported throughout the entire process.</p>
+   <div class="flex justify-center mt-4 space-x-1 text-yellow-400">
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+   </div>
+</div>
+</div>
+
+<!-- card 4 -->
+<div class="swiper-slide">
+    <div class="w- bg-white shadow-lg rounded-2xl p-6 text-center">
+   <img src="./image/DP4.png" alt="Profile" class="w-20 h-20 rounded-full mx-auto border-4 border-gray-200">
+   <h2 class="text-lg font-semibold text-gray-800 mt-4">Chloe Adams</h2>
+   <p class="text-gray-500 text-sm">Marketing Specialist</p>
+   <p class="text-gray-600 mt-3">Being able to find a perfect home and roommate without stress was incredible. The system is intuitive, and the support is top-notch. The community feeling is a huge plus!Highly recommended!</p>
+   <div class="flex justify-center mt-4 space-x-1 text-yellow-400">
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+       <span>&#9733;</span>
+   </div>
+</div>
+</div>
+        
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
   </section>
-  <!-- Footer -->
-  <footer class="bg-green-900 p-4">
-   <div class="container mx-auto text-center">
-    <div class="mb-4">
-     <a class="text-green-300 hover:text-green-400" href="#">
-      Privacy Policy
-     </a>
-     |
-     <a class="text-green-300 hover:text-green-400" href="#">
-      Terms And Conditions
-     </a>
-    </div>
-    <div class="mb-4">
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-linkedin-in">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-twitter">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-tiktok">
-      </i>
-     </a>
-    </div>
-    <p class="text-sm">
-     © 2023 Copyright by LuckyMedia
-    </p>
-   </div>
-  </footer>
- </body>
+
+  <!-- slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- icon kit -->
+<script src="https://kit.fontawesome.com/844a407e82.js" crossorigin="anonymous"></script>
+
+<!-- swipper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>  
+
+</body>
 </html>
