@@ -1,288 +1,237 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   header
-  </title>
-  <link rel="stylesheet" href="./css/style.css">
- </head>
- <body class="bg-black text-white">
-  <!-- Header -->
-  <header class="bg-green-900 p-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <a class="text-white text-lg font-bold" href="#">
-     LuckyMedia
-    </a>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Services
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Portfolio
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Blogs
-       </a>
-      </li>
-     </ul>
-    </nav>
-    <a class="bg-green-300 text-black px-4 py-2 rounded hover:bg-green-400" href="#">
-     Contact Us Today
-    </a>
-   </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="text-center p-20">
-   <h1 class="text-4xl font-bold mb-4">
-    Unleashing Triumph Through Precision in Strategic
-    <span class="text-green-400">
-     Marketing Excellence
-    </span>
-   </h1>
-   <a class="bg-green-300 text-black px-6 py-3 inline-block rounded hover:bg-green-400" href="#">
-    Book A Consultation
-   </a>
-  </section>
-  <!-- About Us Section -->
-  <section class="bg-green-900 p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     About Us
-    </h2>
-    <div class="flex justify-between">
-     <div class="w-1/2 pr-4">
-      <p class="mb-4">
-       At Lucky Media, We Believe In The Power Of Creativity, Innovation, And Strategic Thinking.
-      </p>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Join Us Today
-      </a>
-     </div>
-     <div class="w-1/2 pl-4">
-      <div class="mb-6">
-       <h3 class="text-2xl font-bold mb-2">
-        Our Mission
-       </h3>
-       <p>
-        Our mission is simply yet profound – to help our clients stand out in a crowded digital world. We thrive on challenges, turning obstacles into opportunities and dreams into reality.
-       </p>
-      </div>
-      <div>
-       <h3 class="text-2xl font-bold mb-2">
-        Our Values
-       </h3>
-       <p>
-        At the core of Lucky Media are values that drive our every action, integrity, and a relentless pursuit of excellence are the pillars upon which we build lasting partnerships with our clients.
-       </p>
-      </div>
-     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[##EEEEEE] overflow-x-hidden">
+    <!-- navbar section  -->
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[1080px] h-[700px]" style="background-image: url(../build/img/BG.png);">
+        <nav class="pt-10 relative">
+            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+                <!-- Logo -->
+                <div>
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                </div>
+    
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex">
+                    <ul class="flex xl:gap-10 gap-4">
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign Up Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                    </button>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+                <div class="flex justify-between items-center p-5">
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                    <button id="close-btn" class="text-[#838383] text-2xl">
+                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                    </button>
+                </div>
+                <ul class="text-center space-y-6 mt-10">
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">How It Works</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Properties</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Testimonials</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li>
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="xl:pt-60 pt-20 text-center">
+            <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light">Your <span class="italic font-bold">Perfect</span> Home Awaits</h1>
+            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Explore thousands of listings and find your dream flat or a compatible roommate with ease.</p>
+            <button class="bg-[#FFC300] px-8 py-4 mt-8 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    
+  
+    <!-- find your name  -->
+
+<div class="-mt-20 bg-white shadow-md rounded-[20px] p-8 xl:mx-20 lg:mx-10 mx-5">
+    <div>
+        <h1 class="text-[#3B3B3B] 2xl:text-[26px] text-xl font-semibold">Find Your Next Home</h1>
     </div>
-   </div>
-  </section>
-  <!-- Services Section -->
-  <section class="p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Services
-    </h2>
-    <p class="mb-10">
-     From digital strategy to creative campaigns, we offer a full spectrum of marketing services tailored to your business needs
-    </p>
-    <div class="grid grid-cols-2 gap-10">
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Search Engine Optimization" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-w2EiQKlHe2ppLwtn6AZ8ZKVE.png?st=2024-02-02T05%3A57%3A00Z&amp;se=2024-02-02T07%3A57%3A00Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-02T02%3A03%3A03Z&amp;ske=2024-02-03T02%3A03%3A03Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=zCx6tf0zrYnLaK67q56RQ9LTg1hF6ljHHfXaII7HE/0%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Search Engine Optimization
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Social Media Marketing" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-rQQ3oCZ95c14VtxwFm4chKf8.png?st=2024-02-02T05%3A56%3A59Z&amp;se=2024-02-02T07%3A56%3A59Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-01T22%3A43%3A09Z&amp;ske=2024-02-02T22%3A43%3A09Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=tQ9ArF/%2BwrSkiv%2BCX25kHeXwpGYDJ38SUIOUkbLaPWg%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Social Media Marketing
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Social Media Marketing" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-rQQ3oCZ95c14VtxwFm4chKf8.png?st=2024-02-02T05%3A56%3A59Z&amp;se=2024-02-02T07%3A56%3A59Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-01T22%3A43%3A09Z&amp;ske=2024-02-02T22%3A43%3A09Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=tQ9ArF/%2BwrSkiv%2BCX25kHeXwpGYDJ38SUIOUkbLaPWg%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Social Media Marketing
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
-     <div class="bg-green-900 p-6 rounded">
-      <img alt="Placeholder image representing Search Engine Optimization" class="mb-4" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-ZIQWllsQSphRK8Awqv2f4oQy/user-qCtd37rdZwksEx5e1bRGslEl/img-w2EiQKlHe2ppLwtn6AZ8ZKVE.png?st=2024-02-02T05%3A57%3A00Z&amp;se=2024-02-02T07%3A57%3A00Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-02T02%3A03%3A03Z&amp;ske=2024-02-03T02%3A03%3A03Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=zCx6tf0zrYnLaK67q56RQ9LTg1hF6ljHHfXaII7HE/0%3D" width="100"/>
-      <h3 class="text-xl font-bold mb-2">
-       Search Engine Optimization
-      </h3>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Learn More
-      </a>
-     </div>
+<div class="flex flex-col lg:flex-row gap-4  pt-5">
+                
+    <select class="flex-1 p-2 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+        <option><i class="fa-solid fa-location-dot"></i> Location</option>
+    </select>
+    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+        <option><i class="fa-solid fa-dollar-sign"></i> Budget</option>
+    </select>
+    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#867575]">
+        <option><i class="fa-solid fa-house text-[#838383]"></i> Property Type</option>
+    </select>
+   
+    <button class="bg-[#FFC300] text-white px-32 py-3 rounded-[20px]">Search</button></div>
+</div>
+
+<!-- welcom flat section  -->
+<section class="lg:pt-32 lg:pb-36 pb-12 xl:px-20 lg:px-10 px-5 pt-12">
+    <div class="">
+        <h1 class="flex md:flex-row flex-col justify-center items-center text-center 2xl:text-8xl xl:text-7xl lg:text-5xl text-4xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Welcome to&nbsp;<img src="../build/img/welimg.png" alt=""> <span class="italic font-bold">&nbsp;FlatMatch</span></h1>
+        <p class="2xl:text-[34px] xl:text-2xl text-xl font-normal 2xl:leading-[74px] xl:leading-[64px] leading-[45px] pt-5 text-center text-[#838383]">Where finding your next home or ideal roommate is not just <span class="text-[#3B3B3B]">effortless but also a delightful experience.</span> Our platform is crafted to cater to your individual needs, seamlessly connecting you with living spaces and like-minded individuals that resonate with your <span class="text-[#3B3B3B]">unique lifestyle preferences.</span> By leveraging cutting-edge technology and an intuitive interface, we ensure that your quest for the perfect home is streamlined and enjoyable.</p>
+        <div class="pt-10">
+            <img src="../build/img/matchimg.png" alt="">
+        </div>
     </div>
-   </div>
-  </section>
-  <!-- Portfolio Section -->
-  <section class="bg-green-900 p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Portfolio
-    </h2>
-    <p class="mb-10">
-     Explore the projects that have defined our journey and transformed the fortunes of our clients
-    </p>
-    <a class="text-green-300 hover:text-green-400 mb-10 inline-block" href="#">
-     Explore Our Portfolio
-    </a>
-    <div class="grid grid-cols-2 gap-10">
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       01
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       02
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       03
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
-     <div class="bg-green-500 p-6 rounded">
-      <h3 class="text-4xl font-bold mb-2">
-       04
-      </h3>
-      <p>
-       Discover How We Revitalized Dynasty's Brand
-      </p>
-     </div>
+</section>
+
+<!-- featured section  -->
+<section class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5 xl:pt-20 pt-10 pb-10 xl:pb-24">
+    <div class="flex justify-between items-center md:flex-row flex-col">
+        <div class="md:w-3/5 w-full">
+            <h1 class="xl:text-[56px] xl:leading-[74px] leading-10 text-4xl font-light text-[#3B3B3B]">
+                Powerful Tools and Features Designed to Enhance Your Living Experience
+            </h1>
+            <p class="xl:text-lg font-normal xl:leading-8 text-base leading-7 pt-4" >
+                Discover how our platform's innovative tools and features can transform your search for a living space or flatmate into a streamlined and enjoyable journey. We prioritize user experience by offering cutting-edge solutions that cater to your specific needs, ensuring every step of the process is as efficient and rewarding as possible.
+            </p>
+        </div>
+        <div class="md:w-1/4 w-full pt-5 md:pt-0">
+            <img src="../build/img/tools.png" alt="">
+        </div>
     </div>
-   </div>
-  </section>
-  <!-- Contact Section -->
-  <section class="p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     Let's Connect And Ignite Possibilities
-    </h2>
-    <form class="w-full max-w-lg mx-auto">
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3 mb-6 md:mb-0">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Your Name" type="text"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Email" type="email"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <div class="relative">
-        <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-         <option>
-          Select Service
-         </option>
-         <option>
-          Option 1
-         </option>
-         <option>
-          Option 2
-         </option>
-         <option>
-          Option 3
-         </option>
-        </select>
-       </div>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Budget Range" type="text"/>
-      </div>
-     </div>
-     <div class="flex flex-wrap mb-6">
-      <div class="w-full px-3">
-       <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Project Description"></textarea>
-      </div>
-     </div>
-     <div class="flex flex-wrap">
-      <div class="w-full px-3 text-center">
-       <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded" type="submit">
-        Submit
-       </button>
-      </div>
-     </div>
-    </form>
-   </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-green-900 p-4">
-   <div class="container mx-auto text-center">
-    <div class="mb-4">
-     <a class="text-green-300 hover:text-green-400" href="#">
-      Privacy Policy
-     </a>
-     |
-     <a class="text-green-300 hover:text-green-400" href="#">
-      Terms And Conditions
-     </a>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:pt-20 pt-10 xl:gap-10 gap-4">
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold">Advanced Search Tools</h1>
+            <p class="text-base leading-8">Utilize our intuitive search bar to filter listings by location, budget, and amenities.</p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold">Advanced Search Tools</h1>
+            <p class="text-base leading-8">Utilize our intuitive search bar to filter listings by location, budget, and amenities.</p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold">Advanced Search Tools</h1>
+            <p class="text-base leading-8">Utilize our intuitive search bar to filter listings by location, budget, and amenities.</p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold">Advanced Search Tools</h1>
+            <p class="text-base leading-8">Utilize our intuitive search bar to filter listings by location, budget, and amenities.</p>
+        </div>
     </div>
-    <div class="mb-4">
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-linkedin-in">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-facebook-f">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-twitter">
-      </i>
-     </a>
-     <a class="text-green-300 hover:text-green-400" href="#">
-      <i class="fab fa-tiktok">
-      </i>
-     </a>
+</section>
+
+    <!-- join section  -->
+<section class="bg-cover bg-center 2xl:h-[780px] h-[500px]" style="background-image: url(img/communitybg.png);">
+    <div class="2xl:py-[244px] py-28 text-center">
+        <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light">Join Our   <span class="italic font-bold">Community</span> Today</h1>
+        <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Sign up now and take the first step towards finding your perfect home or flatmate.</p>
+        <button class="bg-[#FFC300] px-8 py-4 md:mt-16 mt-10 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button>
     </div>
-    <p class="text-sm">
-     © 2023 Copyright by LuckyMedia
-    </p>
-   </div>
-  </footer>
- </body>
+</section>
+
+<!-- footer  -->
+<footer class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5">
+    <div class="grid items-center lg:grid-cols-3 md:grid-cols-3 grid-cols-1 justify-center text-center md:text-start 2xl:gap-60 xl:gap-40 gap-10 py-14">
+        <div>
+            <div>
+                <img src="../build/img/footerlogo.png" alt="">
+            </div>
+            <p class="xl:text-xl text-sm text-[#838383] pt-5">Your Journey to the Perfect Home Starts Today.</p>
+        </div>
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold">Contact Information</h1>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-envelope text-[#FFC300]"></i> &nbsp;support@Flatmatch.com</p>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-phone  text-[#FFC300]"></i> &nbsp;1-800-000-0000</p>
+            <hr class="text-black h-2 my-6">
+            <div class="text-2xl md:space-x-6 space-x-3">
+                <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
+                <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
+                <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
+                <i class="fa-brands fa-twitter text-[#FFC300]"></i>
+            </div>
+        </div>
+        
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold font-semibold">Newsletter</h1>
+            <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
+
+           
+<div class="relative md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg mt-4">
+  
+<input type="text" class="w-full pl-2 xl:py-3 py-1 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none" placeholder="Enter Your Enroll Here" />
+  <button
+    class="absolute right-1 top-1 bottom-1 xl:px-6 lg:px-3 px-2 bg-[#FFC300] text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FFC300] md:text-sm lg:text-base xl:text-lg text-lg:"> Subscribe
+  </button>
+</div>
+
+            
+        </div>
+    </div>
+    
+</footer>
+
+<div class="bg-[#3B3B3B] py-2 flex justify-between xl:px-20 lg:px-10 px-5">
+    <div>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm">© 2025 FaltMatch</p>
+    </div>
+    <div class="flex justify-between gap-6">
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline ">Privacy Policy</p>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">Term of Services</p>
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.remove('translate-y-[-100%]');
+        menu.classList.add('translate-y-0');
+        menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
+    });
+
+    closeBtn.addEventListener('click', () => {
+        menu.classList.remove('translate-y-0');
+        menu.classList.add('translate-y-[-100%]');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+            menu.classList.add('translate-y-[-100%]');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        }
+    });
+</script>
+
+    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
 </html>
