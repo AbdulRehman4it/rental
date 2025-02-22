@@ -1,94 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Head
-  </title>
-  <link rel="stylesheet" href="./css/style.css">
- </head>
- <body class="bg-black text-white">
-  <!-- Header -->
-  <header class="bg-green-900 p-4">
-   <div class="container mx-auto flex justify-between items-center">
-    <a class="text-white text-lg font-bold" href="#">
-     LuckyMedia
-    </a>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Services
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Portfolio
-       </a>
-      </li>
-      <li>
-       <a class="text-white hover:text-green-300" href="#">
-        Blogs
-       </a>
-      </li>
-     </ul>
-    </nav>
-    <a class="bg-green-300 text-black px-4 py-2 rounded hover:bg-green-400" href="#">
-     Contact Us Today
-    </a>
-   </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="text-center p-20">
-   <h1 class="text-4xl font-bold mb-4">
-    Unleashing Triumph Through Precision in Strategic
-    <span class="text-green-400">
-     Marketing Excellence
-    </span>
-   </h1>
-   <a class="bg-green-300 text-black px-6 py-3 inline-block rounded hover:bg-green-400" href="#">
-    Book A Consultation
-   </a>
-  </section>
-  <!-- About Us Section -->
-  <section class="bg-green-900 p-20">
-   <div class="container mx-auto">
-    <h2 class="text-3xl font-bold mb-6">
-     About Us
-    </h2>
-    <div class="flex justify-between">
-     <div class="w-1/2 pr-4">
-      <p class="mb-4">
-       At Lucky Media, We Believe In The Power Of Creativity, Innovation, And Strategic Thinking.
-      </p>
-      <a class="text-green-300 hover:text-green-400" href="#">
-       Join Us Today
-      </a>
-     </div>
-     <div class="w-1/2 pl-4">
-      <div class="mb-6">
-       <h3 class="text-2xl font-bold mb-2">
-        Our Mission
-       </h3>
-       <p>
-        Our mission is simply yet profound – to help our clients stand out in a crowded digital world. We thrive on challenges, turning obstacles into opportunities and dreams into reality.
-       </p>
-      </div>
-      <div>
-       <h3 class="text-2xl font-bold mb-2">
-        Our Values
-       </h3>
-       <p>
-        At the core of Lucky Media are values that drive our every action, integrity, and a relentless pursuit of excellence are the pillars upon which we build lasting partnerships with our clients.
-       </p>
-      </div>
-     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[##EEEEEE] overflow-x-hidden">
+    <!-- navbar section  -->
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[1080px] h-[700px]" style="background-image: url(../build/img/BG.png);">
+        <nav class="pt-10 relative">
+            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+                <!-- Logo -->
+                <div>
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                </div>
+    
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex">
+                    <ul class="flex xl:gap-10 gap-4">
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign Up Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                    </button>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+                <div class="flex justify-between items-center p-5">
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                    <button id="close-btn" class="text-[#838383] text-2xl">
+                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                    </button>
+                </div>
+                <ul class="text-center space-y-6 mt-10">
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">How It Works</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Properties</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Testimonials</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li>
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="xl:pt-60 pt-20 text-center">
+            <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light">Your <span class="italic font-bold">Perfect</span> Home Awaits</h1>
+            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Explore thousands of listings and find your dream flat or a compatible roommate with ease.</p>
+            <button class="bg-[#FFC300] px-8 py-4 mt-8 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    
+  
+    <!-- find your name  -->
+
+<div class="-mt-20 bg-white shadow-md rounded-[20px] p-8 xl:mx-20 lg:mx-10 mx-5">
+    <div>
+        <h1 class="text-[#3B3B3B] 2xl:text-[26px] text-xl font-semibold">Find Your Next Home</h1>
     </div>
 <div class="flex flex-col lg:flex-row gap-4  pt-5">
                 
@@ -109,7 +97,7 @@
 <section class="lg:pt-32 lg:pb-36 pb-12 xl:px-20 lg:px-10 px-5 pt-12">
     <div class="">
         <h1 class="flex md:flex-row flex-col justify-center items-center text-center 2xl:text-8xl xl:text-7xl lg:text-5xl text-4xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Welcome to&nbsp;<img src="../build/img/welimg.png" alt=""> <span class="italic font-bold">&nbsp;FlatMatch</span></h1>
-        <p class="2xl:text-[34px] xl:text-2xl text-xl font-normal 2xl:leading-[74px] xl:leading-[64px] leading-[45px] pt-5 text-center text-[#838383]">Where finding your next home or ideal roommate is not just <span class="text-[#3B3B3B]">effortless but also a delightful experience.</span> Our platform is crafted to cater to your individual needs, seamlessly connecting you with living spaces and like-minded individuals that resonate with your <span class="text-[#3B3B3B]">unique lifestyle preferences.</span> By leveraging cutting-edge technology and an intuitive interface, we ensure that your quest for the perfect home is streamlined and enjoyable.</p>
+        <p class="2xl:text-[34px] xl:text-2xl text-xl font-normal 2xl:leading-[74px] xl:leading-[64px] leading-[45px] pt-5 text-center text-[#838383]">Where finding your next home or ideal roommate is not just <span class="text-[#3B3B3B]">effortless but also a delightful experience.</span> Our platform is crafted to cater to your individual needs, seamlessly connecting you with living spaces and like-minded individuals that resonate with your <span class="text-[#3B3B3B]">unique lifestyle preferences.</span> By leveraging cutting-edge technology and an intuitive interface, we ensure that your quest for the perfect home is streamlined and enjoyable.</p>
         <div class="pt-10">
             <img src="../build/img/matchimg.png" alt="">
         </div>
@@ -184,7 +172,7 @@
         
         <div>
             <h1 class="xl:text-[22px] text-lg font-semibold font-semibold">Newsletter</h1>
-            <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
+            <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
 
            
 <div class="relative md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg mt-4">
