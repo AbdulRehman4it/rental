@@ -4,6 +4,7 @@
 
 
 
+<<<<<<< HEAD
 /* FAQS */
 
 .accordion {
@@ -120,3 +121,34 @@
   }
   
   
+=======
+/* slider of signin */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+>>>>>>> 9e9886412ea5ca858974db021ae134680c6b4171
