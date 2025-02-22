@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Creation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#EEEEEE]">
+
+        <!-- navbar section  -->
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[800px] h-[600px]" style="background-image: url(../build/img/BG.png);">
+        <nav class="pt-10 relative">
+            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+                <!-- Logo -->
+                <div>
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                </div>
+    
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex">
+                    <ul class="flex xl:gap-10 gap-4">
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign Up Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                    </button>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+                <div class="flex justify-between items-center p-5">
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                    <button id="close-btn" class="text-[#838383] text-2xl">
+                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                    </button>
+                </div>
+                <ul class="text-center space-y-6 mt-10">
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">How It Works</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Properties</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Testimonials</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li>
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="xl:pt-40 pt-20 text-center">
+            <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light">Start Your <span class="italic font-bold">Journey</span> with Us</h1>
+            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-8 text-white 2xl:leading-8">Tell Us About Yourself and What You're Looking For in a Flatmate</p>
+        
+        </div>
+    </section>
+
+    <!-- contact form  -->
+
+    <!-- <section class="2xl:px-52 xl:px-24 lg:px-12 px-5 -mt-24">
+        <div class="bg-[#F5F5F5] flex lg:flex-row flex-col justify-between gap-12 p-8 rounded-[20px] shadow-xl">
+            <div class="lg:w-[33%] w-full rounded-[20px] bg-[#EEEEEE] p-7">
+                <h1 class="xl:text-[22px] text-xl text-[#3B3B3B] font-semibold">Contact Information</h1>
+                <p class="xl:text-base text-sm leading-7 font-light text-[#838383] pt-4">Reach out to us through any of the following means, and  we’ll ensure you receive the help you need promptly.</p>
+                <p class="xl:text-lg text-base text-[#838383] leading-5 pt-4"><i class="fa-solid fa-phone  text-[#FFC300]"></i> &nbsp;1-800-000-0000</p>
+                <p class="xl:text-lg text-base text-[#838383] leading-5 pt-2"><i class="fa-solid fa-envelope text-[#FFC300]"></i> &nbsp;support@Flatmatch.com</p>
+                <p class="xl:text-lg text-base text-[#838383] leading-5 pt-2"><i class="fa-solid fa-location-dot text-[#FFC300]"></i>  &nbsp;123 Business St., City, Zip</p>
+                <p class="xl:text-lg text-base text-[#838383] leading-5 pt-2"><i class="fa-solid fa-clock text-[#FFC300]"></i> &nbsp;10 AM - 6 PM (Mon-Fri)</p>
+                <h1 class="text-[#3B3B3B] text-base font-semibold pt-10">Follow Us on Social Media</h1>
+                <div class="text-2xl md:space-x-6 space-x-3 pt-4">
+                    <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
+                    <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
+                    <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
+                    <i class="fa-brands fa-twitter text-[#FFC300]"></i>
+                </div>
+            </div>
+            
+            <div class="lg:w-[66%] w-full">
+                <div>
+                    <h1 class="text-[#3B3B3B] text-[26px] font-semibold">Contact or Inquiry Form</h1>
+                    <p class="text-[#838383] xl:text-base text-sm font-normal xl:leading-8 leading-7">We're here to help you find the perfect home! Use the form below to get in touch with us for any questions or inquiries you may have regarding this property.</p>
+                </div>
+                <form action="" class="flex flex-col space-y-3 pt-5">
+                    <div class="flex gap-4">
+                        <input type="text" class="w-1/2 bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Name">
+                        <input type="email" class="w-1/2 bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Email">
+                    </div>
+                    
+                    <input type="text" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Subject">
+                    <textarea name="" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" placeholder="Your Message Here"></textarea>
+                <div class="pt-10">
+                    <button class="bg-[#FFC300] text-white px-16 py-3 rounded-[20px]">Send Inquiry</button>
+                </div>
+                </div>
+        </div>
+    </section> -->
+
+
+    <!-- information  -->
+    <section class="2xl:px-52 xl:px-24 lg:px-12 px-5 -mt-24">
+    <div class="bg-[#F5F5F5] xl:p-10 p-5 rounded-[30px] shadow-lg w-full">
+        <div class="flex items-center space-x-7">
+            <img src="../build/img/profile.png" class="object-cover" alt="Profile Picture">
+            <div>
+                <h2 class="text-[#3B3B3B] xl:text-xl text-lg font-semibold">Add a Profile Picture</h2>
+                <p class="xl:text-base text-sm font-light text-[#838383] pt-2">Supported formats: JPG, JPEG, PNG. Max size: 2MB.</p>
+                <button class="mt-4 lg:px-14 lg:py-4 px-6 py-3 lg:text-lg text-sm bg-transparent border border-[#FFC300] text-[#FFC300] font-bold rounded-2xl"><i class="fa-solid fa-upload text-[#FFC300]"></i> &nbsp;Choose File</button>
+            </div>
+        </div>
+        
+        <div class="mt-6 space-y-4">
+            <h3 class="xl:text-xl text-base text-[#3B3B3B] font-semibold">Basic Information</h3>
+            <div class="grid grid-cols-3 gap-4">
+                <input type="text" placeholder="Your Name" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+                <input type="text" placeholder="Enter your Age" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+                <input type="text" placeholder="Enter your Profession" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+            </div>
+            <input type="email" placeholder="Enter Email Address" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+            <input type="tel" placeholder="Enter Phone Number" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+            <textarea placeholder="Write a Brief Bio About Yourself" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full"></textarea>
+        </div>
+        
+        <div class="mt-6 space-y-4">
+            <h3 class="xl:text-xl text-base text-[#3B3B3B] font-semibold">Preferences</h3>
+            <div class="grid grid-cols-3 gap-4">
+                <input type="text" placeholder="Minimum Budget" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+                <input type="text" placeholder="Maximum Budget" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+                <input type="text" placeholder="Enter Preferred Locations" class="bg-[#EEEEEE] p-4 border border-[#EEEEEE] rounded-[20px] w-full">
+            </div>
+        </div>
+        <div class="flex xl:flex-row flex-col xl:gap-48 gap-20 xl:my-12 my-6">
+        <div class="">
+            <h3 class="xl:text-xl text-base text-[#3B3B3B] font-semibold">Property Type</h3>
+            <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-2">
+                <label class="flex items-center space-x-2 "><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Shared Room</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Single Room</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Entire Apartment</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Studio Apartment</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Loft</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Townhouse</span></label>
+            </div>
+        </div>
+        
+        <div class="">
+            <h3 class="xl:text-xl text-base text-[#3B3B3B] font-semibold">Lifestyle Choices</h3>
+            <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-2">
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Quiet</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Social</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Pet-Friendly</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Non-Smoking</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Night Owl</span></label>
+                <label class="flex items-center space-x-2"><input type="checkbox" class="accent-black" checked> <span class="2xl:text-base text-sm text-[#838383]">Fitness Enthusiast</span></label>
+            </div>
+        </div>
+    </div>
+    <hr>
+        
+        <div class="mt-12">
+            <a href="#popup1">
+            <button class="2xl:py-4 2xl:px-14 lg:py-3 lg:px-8 px-6 py-3 lg:text-lg text-sm bg-[#FFC300] text-[#F5F5F5] font-semibold rounded-2xl">Create Profile</button>
+        </a>
+        </div>
+    </div>
+</section>
+
+<div id="popup1" class="overlay ">
+	<div class="popup bg-[#F5F5F5]">
+        <div class="flex justify-center">
+            <img src="../build/img/pupupimg.png" alt="">
+        </div>
+		<h1 class="2xl:text-3xl text-xl text-[#3B3B3B] font-semibold  pt-5">Congratulations, your profile has been successfully created.</h1>
+        <p class="text-[#838383] xl:text-lg text-sm pt-2">You're one step closer to finding your perfect flatmate. Explore your match recommendations and start making connections today!</p>
+		
+        <div class="pt-10">
+            <a href="profile.html" class="flex justify-center">
+                <button class="flex justify-center items-center gap-2 px-6 py-3 lg:text-lg text-sm bg-[#FFC300] text-[#F5F5F5] font-semibold rounded-2xl">Start Swiping <img src="../build/img/touch.png" alt=""></button>
+        </a>
+        </div>
+		
+	</div>
+</div>
+
+<!-- footer  -->
+<footer class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5 xl:mt-24 mt-10">
+    <div class="grid items-center lg:grid-cols-3 md:grid-cols-3 grid-cols-1 justify-center text-center md:text-start 2xl:gap-60 xl:gap-40 gap-10 py-14">
+        <div>
+            <div>
+                <img src="../build/img/footerlogo.png" alt="">
+            </div>
+            <p class="xl:text-xl text-sm text-[#838383] pt-5">Your Journey to the Perfect Home Starts Today.</p>
+        </div>
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold">Contact Information</h1>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-envelope text-[#FFC300]"></i> &nbsp;support@Flatmatch.com</p>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-phone  text-[#FFC300]"></i> &nbsp;1-800-000-0000</p>
+            <hr class="text-black h-2 my-6">
+            <div class="text-2xl md:space-x-6 space-x-3">
+                <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
+                <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
+                <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
+                <i class="fa-brands fa-twitter text-[#FFC300]"></i>
+            </div>
+        </div>
+        
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold font-semibold">Newsletter</h1>
+            <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
+
+           
+<div class="flex md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5  hover:scale-105 hover:shadow-lg mt-4">
+  
+<input type="text" class="w-full pl-2 xl:py-3 py-1 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none" placeholder="Enter Your Enroll Here" />
+  <button
+    class=" xl:px-6 lg:px-3 px-2 bg-[#FFC300] text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FFC300] md:text-sm lg:text-base xl:text-lg text-lg:"> Subscribe
+  </button>
+</div>
+
+            
+        </div>
+    </div>
+    
+</footer>
+
+
+
+
+
+      <!-- JavaScript for Menu Toggle -->
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const menu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+    
+        menuBtn.addEventListener('click', () => {
+            menu.classList.remove('translate-y-[-100%]');
+            menu.classList.add('translate-y-0');
+            menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('translate-y-0');
+            menu.classList.add('translate-y-[-100%]');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                menu.classList.add('translate-y-[-100%]');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
+    </script>
+
+
+
+    
+
+<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

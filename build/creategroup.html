@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#EEEEEE]">
+    
+          <!-- navbar section  -->
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[800px] h-[600px]" style="background-image: url(../build/img/listroombg.png);">
+        <nav class="pt-10 relative">
+            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+                <!-- Logo -->
+                <div>
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                </div>
+    
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex">
+                    <ul class="flex xl:gap-10 gap-4">
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Browse Listings</a></li>
+                        <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                      
+                    </ul>
+                </div>
+    
+                <!-- Sign Up Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                    </button>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+                <div class="flex justify-between items-center p-5">
+                    <img src="../build/img/logo1.png" alt="Company Logo">
+                    <button id="close-btn" class="text-[#838383] text-2xl">
+                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                    </button>
+                </div>
+                <ul class="text-center space-y-6 mt-10">
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Browse Listings</a></li>
+                    <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li>
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="xl:pt-40 pt-20 text-center">
+            <h1 class="2xl:text-[110] xl:text-8xl text-4xl text-white font-light">Build Your Ideal <span class="italic font-bold"> Krew</span></h1>
+            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-8 text-white 2xl:leading-8">Form your own krews and search your perfect home</p>
+        
+        </div>
+    </section>
+
+ <!-- information  -->
+ <section class="2xl:px-52 xl:px-24 lg:px-12 px-5 -mt-24">
+    <div class="w-full">
+        <div class="bg-[#F5F5F5] shadow-xl rounded-[30px] p-10 w-full">
+            <p class="text-[#838383] xl:text-3xl text-xl xl:leading-[50px] leading-8 font-light">
+                Creating a group lets you team up with like-minded individuals for a more personalized renting experience. Align your preferences and start your search with confidence.
+            </p>
+    
+            <hr class="my-6 border-gray-300" />
+    
+    
+            <!-- Property Details -->
+            <div>
+    
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                    <div>
+                        <label class="text-sm text-[#3B3B3B] mt-4">Group Name</label>
+                        <input type="text" placeholder="Enter name here" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
+                    </div>
+    
+                    <div>
+                        <label class="text-sm text-[#3B3B3B] mt-4">Number of Flatmates Needed</label>
+                        <input type="text" placeholder="Looking for [2, 3, 4+] flatmates" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
+                    </div>
+                    <div>
+                        <label class="text-sm text-[#3B3B3B] mt-4">Preferred Location</label>
+                        <input type="text" placeholder="Area/City" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
+                    </div>
+    
+                    <div>
+                        <label class="text-sm text-[#3B3B3B] mt-4">Budget per person</label>
+                        <input type="text" placeholder="Amount" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
+                    </div>
+                </div>
+
+                <hr class="my-6 border-gray-300"/>
+                
+                <div class="">
+                    <h3 class="xl:text-xl text-base text-[#3B3B3B] font-semibold">Property Type</h3>
+                    <div class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-2">
+                        <label class="flex items-center space-x-2 "><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Shared Room</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Single Room</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Entire Apartment</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Studio Apartment</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Loft</span></label>
+                        <label class="flex items-center space-x-2"><input type="checkbox" class="accent-white" checked> <span class="2xl:text-base text-sm text-[#838383]">Townhouse</span></label>
+                    </div>
+                </div>
+               
+            </div>
+    
+            <hr class="my-8 border-gray-300" />
+    
+            <!-- Submit Button -->
+            <button class=" bg-[#FFC300] text-[#F5F5F5] font-bold py-3 px-6 rounded-lg">
+                Create Group
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- JavaScript for Menu Toggle -->
+          <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+        
+            menuBtn.addEventListener('click', () => {
+                menu.classList.remove('translate-y-[-100%]');
+                menu.classList.add('translate-y-0');
+                menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
+            });
+        
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('translate-y-0');
+                menu.classList.add('translate-y-[-100%]');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
+            });
+        
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                    menu.classList.add('translate-y-[-100%]');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
