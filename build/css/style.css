@@ -1650,8 +1650,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* FAQS */
-
 .accordion {
   display: flex;
   flex-direction: column;
@@ -2525,6 +2523,9 @@ video {
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 8407051feecdbeb86119dac900fd655064775920
