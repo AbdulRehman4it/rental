@@ -1076,10 +1076,6 @@ video {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
-.bg-\[\#\#EEEEEE\] {
-  background-color: ##EEEEEE;
-}
-
 .bg-\[\#3B3B3B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 59 59 / var(--tw-bg-opacity));
@@ -1649,6 +1645,8 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* FAQS */
 
 .accordion {
   display: flex;
@@ -2523,9 +2521,6 @@ video {
 
 
 
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 8407051feecdbeb86119dac900fd655064775920
