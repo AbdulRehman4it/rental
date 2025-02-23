@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JOINGROPU</title>
+   
+</head>
+<body class="bg-[#EEEEEE]">
+
+  <section class="2xl:px-20 xl:px-10 px-5">
+    <nav class="pt-10 relative">
+      <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+          <!-- Logo -->
+          <div>
+              <img src="../build/img/logo1.png" alt="Company Logo">
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex">
+              <ul class="flex xl:gap-10 gap-4">
+                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Browse Listings</a></li>
+                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+              
+              </ul>
+          </div>
+
+          <!-- Sign Up Button (Desktop) -->
+          <div class="hidden lg:block">
+              <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                  <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+              </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+              <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                  <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+              </button>
+          </div>
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+          <div class="flex justify-between items-center p-5">
+              <img src="../build/img/logo1.png" alt="Company Logo">
+              <button id="close-btn" class="text-[#838383] text-2xl">
+                  <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+              </button>
+          </div>
+          <ul class="text-center space-y-6 mt-10">
+              <li><a href="#" class="text-[#838383] text-lg font-medium">Browse Listings</a></li>
+              <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+            
+              <li>
+                  <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  </section>
+  <section class="lg:pt-32 2xl:px-20 lg:px-10 px-5 pt-12">
+    <div class="">
+        <h1 class="flex md:flex-row flex-col lg:justify-start justify-center items-center text-center 2xl:text-8xl xl:text-7xl lg:text-5xl text-4xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Find Your Perfect&nbsp;<img src="../build/img/welimg.png" alt=""> <span class="italic font-bold">&nbsp;FlatMatch</span></h1>
+        <p class="text-[#838383] xl:text-2xl text-lg lg:text-start text-center mt-2">Find your <span class="font-semibold text-[#3B3B3B]">Krews</span> to find your   <span class="font-semibold text-[#3B3B3B]">perfect home</span></p>
+    </div>
+  </section>
+
+<!-- find your name  -->
+  <div class="mt-8 bg-white shadow-md rounded-[20px] p-8 2xl:mx-20 lg:mx-10 mx-5">
+    <div>
+        <h1 class="text-[#3B3B3B] 2xl:text-[26px] text-xl font-semibold">Find Your Next Home</h1>
+    </div>
+<div class="flex flex-col lg:flex-row gap-4  pt-5">
+                
+    <select class="flex-1 p-2 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+        <option><i class="fa-solid fa-location-dot"></i> Location</option>
+    </select>
+    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+        <option><i class="fa-solid fa-dollar-sign"></i> Budget</option>
+    </select>
+    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#867575]">
+        <option><i class="fa-solid fa-house text-[#838383]"></i> Property Type</option>
+    </select>
+   
+    <button class="bg-[#FFC300] text-white px-32 py-3 rounded-[20px]">Search</button></div>
+</div>
+
+
+<!-- cards -->
+    <section>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 py-10 gap-6">
+                <!-- Card 1 -->
+                <div class=" bg-white shadow-md rounded-lg overflow-hidden ">
+                    <div class="">
+                        <div class="flex justify-center gap-2 px-2 py-2">
+                            <img src="./image/1cradpic1.png" alt="Property Image" class="w-32 rounded-2xl h-36 object-cover">
+                        <img src="./image/1cardpic2.png" alt="Property Image" class="w-32 rounded-2xl h-36 object-cover">
+                        </div>
+                        <div class="flex justify-center gap-2 px-2 py-2">
+                            <img src="./image/1cardpic3.png" alt="Property Image" class="w-32 rounded-2xl h-32 object-cover">
+                        <img src="./image/1cardpic4.png" alt="Property Image" class="w-32 rounded-2xl h-32 object-cover">
+                        </div>
+                        
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                        
+                        <div class="text-[#3B3B3B] text-sm items-center gap-2">
+                          <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-yellow-500 "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
+                            <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
+                            <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                            <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                        </div>
+                        <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                             <!-- icon button -->
+
+                            <div class="flex items-center justify-center pt-8">
+                              <button class="flex items-center justify-center gap-2 border-2 border-yellow-500 text-yellow-500 px-8 py-2 rounded-lg   w-full sm:w-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                  <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
+                                </svg>
+                                <span class="text-lg font-medium">Request to Join</span>
+                              </button>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                  <div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/2cardpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/2cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/2cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/2cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      
+                  </div>
+                  <div class="p-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                      
+                      <div class="text-[#3B3B3B] text-sm items-center gap-2">
+                        <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-yellow-500 "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                      </div>
+                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                           <!-- icon button -->
+
+                          <div class="flex items-center justify-center pt-6">
+                            <button class="flex items-center justify-center gap-2 border-2 border-yellow-500 text-yellow-500 px-8 py-2 rounded-lg   w-full sm:w-auto">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
+                              </svg>
+                              <span class="text-lg font-medium">Request to Join</span>
+                            </button>
+                          </div>
+                          
+                  </div>
+              </div>
+
+                <!-- card 3 -->
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                  <div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/1cradpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/1cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/1cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/1cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      
+                  </div>
+                  <div class="p-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                      
+                      <div class="text-[#3B3B3B] text-sm items-center gap-2">
+                        <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-yellow-500 "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                      </div>
+                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                           <!-- icon button -->
+
+                          <div class="flex items-center justify-center pt-6">
+                            <button class="flex items-center justify-center gap-2 border-2 border-yellow-500 text-yellow-500 px-8 py-2 rounded-lg   w-full sm:w-auto">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
+                              </svg>
+                              <span class="text-lg font-medium">Request to Join</span>
+                            </button>
+                          </div>
+                          
+                  </div>
+              </div>
+
+                <!-- card 4 -->
+
+
+                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
+                  <div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/1cradpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/1cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      <div class="flex justify-center gap-2 px-2 py-2">
+                          <img src="./image/1cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      <img src="./image/1cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
+                      </div>
+                      
+                  </div>
+                  <div class="p-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                      
+                      <div class="text-[#3B3B3B] text-sm items-center gap-2">
+                        <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-yellow-500 "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                      </div>
+                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                           <!-- icon button -->
+
+                          <div class="flex items-center justify-center pt-6">
+                            <button class="flex items-center justify-center gap-2 border-2 border-yellow-500 text-yellow-500 px-8 py-2 rounded-lg   w-full sm:w-auto">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
+                              </svg>
+                              <span class="text-lg font-medium">Request to Join</span>
+                            </button>
+                          </div>
+                          
+                  </div>
+              </div>
+              <div class="flex items-center justify-center mt-8 space-x-2">
+                <button class="text-gray-500">&lt;</button>
+                <button class="text-yellow-500 font-bold">1</button>
+                <button class="text-gray-500">2</button>
+                <button class="text-gray-500">3</button>
+                <button class="text-gray-500">4</button>
+                <button class="text-gray-500">&gt;</button>
+            </div>
+               
+            </div>
+            
+    </section>
+
+
+
+
+
+
+    
+           <!-- JavaScript for Menu Toggle -->
+           <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+        
+            menuBtn.addEventListener('click', () => {
+                menu.classList.remove('translate-y-[-100%]');
+                menu.classList.add('translate-y-0');
+                menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
+            });
+        
+            closeBtn.addEventListener('click', () => {
+                menu.classList.remove('translate-y-0');
+                menu.classList.add('translate-y-[-100%]');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
+            });
+        
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                    menu.classList.add('translate-y-[-100%]');
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+</body>
+</html>
