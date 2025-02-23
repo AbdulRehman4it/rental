@@ -695,6 +695,10 @@ video {
   margin-top: -6rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -741,14 +745,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-36 {
-  margin-bottom: 9rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .block {
@@ -1140,7 +1136,7 @@ video {
   border-top-width: 1px;
 }
 
-.border-\[\#E5E5E5\] {
+
 .border-\[\#E5E5E5\] {
   --tw-border-opacity: 1;
   border-color: rgb(229 229 229 / var(--tw-border-opacity));
@@ -1182,7 +1178,7 @@ video {
 }
 
 .bg-\[\#\#EEEEEE\] {
-  background-color: ##EEEEEE;
+  background-color: #EEEEEE;
 }
 
 .bg-\[\#3B3B3B\] {
@@ -1210,7 +1206,7 @@ video {
   background-color: rgb(255 195 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1664,7 +1660,7 @@ video {
   color: rgb(255 195 0 / var(--tw-text-opacity));
 }
 
-.text-black {
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1990,6 +1986,11 @@ video {
 .hover\:bg-yellow-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
@@ -2388,6 +2389,10 @@ video {
     margin-bottom: 3rem;
   }
 
+  .xl\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
   .xl\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -2398,10 +2403,6 @@ video {
 
   .xl\:mt-24 {
     margin-top: 6rem;
-  }
-
-  .xl\:mb-36 {
-    margin-bottom: 9rem;
   }
 
   .xl\:h-\[1080px\] {
@@ -2619,6 +2620,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:leading-8 {
     line-height: 2rem;
   }
@@ -2637,10 +2643,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mb-36 {
-    margin-bottom: 9rem;
-  }
-
   .\32xl\:block {
     display: block;
   }
@@ -2777,10 +2779,4 @@ video {
     --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
   }
 }
-
-
-
-
-
-
 
