@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>Owl Carousel</title>
+    <style>
+        .owl-carousel .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 350px;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="w-full max-w-5xl">
+        <div class="owl-carousel owl-theme">
+            <div class="item p-4">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center w-full">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-32 h-32 mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold">Mark William</h3>
+                    <p class="text-gray-600">📍 London, UK - Camden</p>
+                    <p class="text-gray-800 font-semibold">💰 Budget: £1,600/month</p>
+                    <p class="text-gray-700">📅 Move-in & Lease: 2 August, 2025 / 12-month lease</p>
+                    <hr class="my-4">
+                    <ul class="text-sm text-gray-700 text-left">
+                        <li>✔️ Prefers a quiet living environment</li>
+                        <li>✔️ Enjoys a social household</li>
+                        <li>✔️ Pet-friendly</li>
+                        <li>✔️ Works from home</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item p-4">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center w-full">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-32 h-32 mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold">Emma Thompson</h3>
+                    <p class="text-gray-600">📍 Edinburgh, UK - Leith</p>
+                    <p class="text-gray-800 font-semibold">💰 Budget: £950/month</p>
+                    <p class="text-gray-700">📅 Move-in & Lease: 1 October, 2025 / 9-month lease</p>
+                    <hr class="my-4">
+                    <ul class="text-sm text-gray-700 text-left">
+                        <li>✔️ Prefers a quiet living environment</li>
+                        <li>✔️ Enjoys a social household</li>
+                        <li>✔️ Pet-friendly</li>
+                        <li>✔️ Works from home</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item p-4">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center w-full">
+                    <img src="https://randomuser.me/api/portraits/men/50.jpg" class="w-32 h-32 mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold">John Doe</h3>
+                    <p class="text-gray-600">📍 Manchester, UK</p>
+                    <p class="text-gray-800 font-semibold">💰 Budget: £1,200/month</p>
+                    <p class="text-gray-700">📅 Move-in & Lease: 15 September, 2025 / 6-month lease</p>
+                    <hr class="my-4">
+                    <ul class="text-sm text-gray-700 text-left">
+                        <li>✔️ Prefers a quiet living environment</li>
+                        <li>✔️ Enjoys a social household</li>
+                        <li>✔️ Pet-friendly</li>
+                        <li>✔️ Works from home</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                center: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
