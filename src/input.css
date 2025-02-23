@@ -1,15 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> safyanneww
-/* FAQS */
-
 .accordion {
     display: flex;
     flex-direction: column;
@@ -150,7 +141,7 @@
 
 
 
-<<<<<<< HEAD
+
   .swiper {
     width: 600px;
     height: 300px;
@@ -181,10 +172,4 @@
 	}
 
 
-
-
-
-
-=======
->>>>>>> safyanneww
 
