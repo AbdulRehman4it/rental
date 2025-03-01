@@ -4,10 +4,10 @@ require_once './inc/header.php';
 ?>
 <body class="overflow-x-hidden ">
     <div id="bubble-screen" class="fixed top-0 left-0 h-screen w-screen bg-[#EEEEEE] overflow-hidden transition-transform duration-1000 flex items-center justify-center">
-        <div id="bubbles" class="absolute w-full h-full bg-[black]" >
+        <div id="bubbles" class="absolute w-full h-full" >
             <!-- Dynamically generated bubbles -->
         </div>
-        
+      
         <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4">
             <button class="bg-white p-3 rounded-lg shadow">Find your Kosy Krew</button>
             <button class="bg-white p-3 rounded-lg shadow">Browse properties</button>
@@ -154,7 +154,6 @@ require_once './inc/header.php';
  <!-- bubbles  -->
     
  <script>
-    // bubble 1
     document.addEventListener("DOMContentLoaded", () => {
         const bubbleContainer = document.getElementById("bubbles");
         const bubbleScreen = document.getElementById("bubble-screen");
@@ -216,7 +215,6 @@ require_once './inc/header.php';
             }
         });
     });
-    
 </script>
 </body>
 </html>
