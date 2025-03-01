@@ -174,16 +174,16 @@ require_once './inc/header.php';
 
     // Array of URLs to navigate when each bubble is clicked
     const bubbleLinks = [
-        "https://example.com/page1",
-        "https://example.com/page2",
-        "https://example.com/page3",
-        "https://example.com/page4",
-        "https://example.com/page5",
-        "https://example.com/page1",
-        "https://example.com/page2",
-        "https://example.com/page3",
-        "https://example.com/page4",
-        "https://example.com/page5"
+        "./contact.php",
+        "./companion.php",
+        "./creategroup.php",
+        "./flatmate.php",
+        "./index.php",
+        "./joinflate.php",
+        "./listroom.php",
+        "./search.php",
+        "./signup.php",
+        "./contact.php"
     ];
 
     function createBubble(index) {
