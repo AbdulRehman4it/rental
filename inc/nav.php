@@ -12,7 +12,17 @@
                     <ul class="flex xl:gap-10 gap-4">
                         <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
                         <li><a href="search.php" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
-                        <li><a href="companion.php" class="text-[#838383] xl:text-base text-sm font-medium">Companion</a></li>
+                        <  <!-- Companion Dropdown -->
+                <li class="relative group">
+                    <a href="#" class="text-[#838383] xl:text-base text-sm font-medium flex items-center">
+                        Companion <i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
+                    </a>
+                    <ul class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <li><a href="companion.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">All Companions</a></li>
+                        <li><a href="category1.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Category 1</a></li>
+                        <li><a href="category2.php" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Category 2</a></li>
+                    </ul>
+                </li>
                         
                         <!-- <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li> -->
                         <li><a href="contact.php" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
