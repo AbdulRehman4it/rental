@@ -159,11 +159,11 @@ require_once './inc/header.php';
         const bubbles = [];
         
         const bubbleImages = [
-            "url('image1.jpg')",
-            "url('image2.jpg')",
-            "url('image3.jpg')",
-            "url('image4.jpg')",
-            "url('image5.jpg')"
+            "url('./img/BG.png')",
+            "url('./img/BG.png')",
+            "url('./img/BG.png')",
+            "url('./img/BG.png')",
+            "url('./img/BG.png')"
         ];
 
         function createBubble(index) {
