@@ -1306,11 +1306,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -1721,6 +1716,26 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hidden-page {
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
 /* FAQS */
 
 .accordion {
@@ -2081,6 +2096,11 @@ video {
     text-align: start;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2089,11 +2109,6 @@ video {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
