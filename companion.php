@@ -11,7 +11,7 @@ require_once './inc/header.php';
             <!-- Hero Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 mt-6 xl:py-36 py-20 2xl:px-28 xl:px-44 lg:px-10 px-5">
                 <div class="bg-white p-7 rounded-[50px] shadow text-center"> <!--should go to flatemate page-->
-                    <a href="./flatemate.php">
+                    <a href="./flatmate.php">
                     <div class="flex justify-center"><img src="img/firstpro.png" alt=""></div>
                     <h3 class="font-semibold mt-4 xl:text-2xl text-lg text-[#3B3B3B]">Find a Kosy Krew</h3>
                     <p class="text-[#838383] xl:text-base text-sm mt-2 xl:leading-8 leading-7">Swipe to connect with potential flatmates and start your shared living experience.</p>
