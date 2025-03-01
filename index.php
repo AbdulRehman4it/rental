@@ -152,8 +152,85 @@ require_once './inc/header.php';
 
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
  <!-- bubbles  -->
-    
  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const bubbleContainer = document.getElementById("bubbles");
+        const bubbleScreen = document.getElementById("bubble-screen");
+        const bubbles = [];
+        
+        const bubbleImages = [
+            "url('image1.jpg')",
+            "url('image2.jpg')",
+            "url('image3.jpg')",
+            "url('image4.jpg')",
+            "url('image5.jpg')"
+        ];
+
+        function createBubble(index) {
+            let bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            let size = 60; // Fixed size for all bubbles
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.backgroundImage = bubbleImages[index];
+            bubble.style.backgroundSize = "cover";
+            bubble.style.borderRadius = "50%";
+            bubble.style.position = "absolute";
+
+            let randomX = Math.random() * (window.innerWidth - size);
+            let randomY = Math.random() * (window.innerHeight - size);
+            bubble.style.left = `${randomX}px`;
+            bubble.style.top = `${randomY}px`;
+            
+            bubble.addEventListener("click", () => {
+                bubble.remove();
+            });
+
+            bubbleContainer.appendChild(bubble);
+
+            bubbles.push({
+                element: bubble,
+                vx: (Math.random() - 0.5) * 4,
+                vy: (Math.random() - 0.5) * 4
+            });
+        }
+
+        // Generate exactly 5 bubbles
+        for (let i = 0; i < 5; i++) {
+            createBubble(i);
+        }
+
+        function animateBubbles() {
+            bubbles.forEach(bubble => {
+                let rect = bubble.element.getBoundingClientRect();
+                let x = parseFloat(bubble.element.style.left);
+                let y = parseFloat(bubble.element.style.top);
+
+                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
+                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
+
+                bubble.element.style.left = `${x + bubble.vx}px`;
+                bubble.element.style.top = `${y + bubble.vy}px`;
+            });
+            requestAnimationFrame(animateBubbles);
+        }
+
+        animateBubbles();
+
+        let scrolled = false;
+        window.addEventListener("scroll", () => {
+            if (!scrolled) {
+                bubbleScreen.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    bubbleContainer.innerHTML = "";
+                }, 1000);
+                scrolled = true;
+            }
+        });
+    });
+</script>
+
+ <!-- <script>
     document.addEventListener("DOMContentLoaded", () => {
         const bubbleContainer = document.getElementById("bubbles");
         const bubbleScreen = document.getElementById("bubble-screen");
@@ -215,6 +292,6 @@ require_once './inc/header.php';
             }
         });
     });
-</script>
+</script> -->
 </body>
 </html>
