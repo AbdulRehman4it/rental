@@ -9,68 +9,68 @@
 <body class="bg-[#EEEEEE] overflow-x-hidden">
 
     <!-- navbar section  -->
-    <section class=" 2xl:px-20 xl:px-10 px-5">
+    <section class="2xl:px-20 xl:px-10 px-5">
+
         <nav class="pt-10 relative">
-            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
-                <!-- Logo -->
-                <div>
-                    <a href="index.html">
-                    <img src="../build/img/logo1.png" alt="Company Logo">
-                </a>
-                </div>
+          <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+              <!-- Logo -->
+              <div>
+                  <a href="index.html">
+                  <img src="../build/img/logo2.png" alt="Company Logo">
+              </a>
+              </div>
     
-                <!-- Desktop Menu -->
-                <div class="hidden lg:flex">
-                    <ul class="flex xl:gap-10 gap-4">
-                        <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li>
-                        <li><a href="search.html" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
-                        <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>
-                        <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>
-                        <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li>
-                        <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
-                    </ul>
-                </div>
+              <!-- Desktop Menu -->
+              <div class="hidden lg:flex">
+                  <ul class="flex xl:gap-10 gap-4">
+                      <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
+                      <li><a href="search.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Properties</a></li>
+                      <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Companion</a></li>
+                      <!-- <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>                  <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li> -->
+                      <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Contact Us</a></li>
+                  </ul>
+              </div>
     
-                <!-- Sign Up Button (Desktop) -->
-                <div class="hidden lg:block">
+              <!-- Sign Up Button (Desktop) -->
+              <div class="hidden lg:block">
+                  <a href="signup.html">
+                  <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                    <i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp; Sign in
+                  </button>
+              </a>
+              </div>
+    
+              <!-- Mobile Menu Button -->
+              <div class="lg:hidden">
+                  <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                      <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                  </button>
+              </div>
+          </div>
+    
+          <!-- Mobile Menu (Hidden by Default) -->
+          <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+              <div class="flex justify-between items-center p-5">
+                  <img src="../build/img/logo1.png" alt="Company Logo">
+                  <button id="close-btn" class="text-[#838383] text-2xl">
+                      <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                  </button>
+              </div>
+              <ul class="text-center space-y-6 mt-10">
+                  <!-- <li><a href="index.html" class="text-[#838383] text-lg font-medium">How It Works</a></li> -->
+                  <li><a href="search.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Properties</a></li>
+                  <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Companion</a></li>
+                  <!-- <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+                  <li><a href="profile.html" class="text-[#838383] text-lg font-medium">Testimonials</a></li> -->
+                  <li><a href="contact.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Contact Us</a></li>
+                  <li>
                     <a href="signup.html">
-                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
-                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
-                    </button>
-                </a>
-                </div>
-    
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden">
-                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
-                    </button>
-                </div>
-            </div>
-    
-            <!-- Mobile Menu (Hidden by Default) -->
-            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
-                <div class="flex justify-between items-center p-5">
-                    <img src="../build/img/logo1.png" alt="Company Logo">
-                    <button id="close-btn" class="text-[#838383] text-2xl">
-                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
-                    </button>
-                </div>
-                <ul class="text-center space-y-6 mt-10">
-                    <li><a href="index.html" class="text-[#838383] text-lg font-medium">How It Works</a></li>
-                    <li><a href="search.html" class="text-[#838383] text-lg font-medium">Properties</a></li>
-                    <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
-                    <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
-                    <li><a href="profile.html" class="text-[#838383] text-lg font-medium">Testimonials</a></li>
-                    <li><a href="contact.html" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
-                    <li>
-                        <a href="signup.html">
-                            <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                      <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4"><i class="fa-solid fa-circle-user"></i> &nbsp;Sign in</button>
+                  </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
     </section>
     
     <!-- image section  -->
@@ -99,7 +99,8 @@
         <div class="lg:w-3/5 w-full">
             <div class="flex md:flex-row flex-col justify-between">
                 <div>
-                <h1 class="text-[#3B3B3B] 2xl:text-[58px] xl:text-5xl text-4xl font-light 2xl:leading-[72px] xl:leading-[64px] leading-[45px]">Modern 2-Bedroom <br> Apartment</h1>
+                <h1 class="text-[#3B3B3B] 2xl:text-[58px] xl:text-5xl text-4xl font-light 2xl:leading-[72px] xl:leading-[64px] leading-[45px]">Camden Road
+                     <br> London N7</h1>
                 <p class="text-[#838383] xl:text-xl text-base font-normal pt-4"><i class="fa-solid fa-location-dot"></i> Address: 123 Main St, Downtown Area</p>
             </div>
             <div class="pt-5 xl:space-x-4 space-x-2">
@@ -188,21 +189,21 @@
             </div>
             <form action="" class="flex flex-col space-y-3 pt-5">
                 <input type="text" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Name">
-                <input type="email" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Address">
+                <input type="email" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Email Address">
                 <input type="number" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Phone Number">
-                <textarea name="" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" placeholder="Your Message Here"></textarea>
+                <textarea name="" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" rows="5" placeholder="Your Message Here........"></textarea>
             <div class="pt-10">
                 <button class="bg-[#FFC300] text-white px-16 py-3 rounded-[20px]">Send Inquiry</button>
             </div>
         </form>
         <div class="flex md:flex-row flex-col items-center gap-6 bg-[#F5F5F5] rounded-[30px] p-7 mt-10">
             <div>
-                <img src="../build/img/Dpimg.png" alt="">
+                <img src="../build/img/owner.png" alt="">
             </div>
             <div>
-                <h1 class="xl:text-lg text-base text-[#3B3B3B]">Kashan Bhatti <span>Owner</span></h1>
+                <h1 class="xl:text-lg text-base text-[#3B3B3B]">Oliver Williams <span class="text-[#838383] font-600 text-xs">Owner</span></h1>
                 <div class="flex justify-between pt-4 gap-10">
-                <p class="text-[#838383] xl:text-sm text-xs"><i class="fa-solid fa-envelope"></i> &nbsp; kashan004@gmail.com</p>
+                <p class="text-[#838383] xl:text-sm text-xs"><i class="fa-solid fa-envelope"></i> &nbsp;Oliver Williams4@gmail.com</p>
                 <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
             </div>
             <div class="flex pt-2 gap-10">
@@ -248,8 +249,8 @@
                         </p>
                         <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$950/month</p>
                         <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> View Details
+                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
+                                <i class="fa-solid fa-eye"></i> Explore This Home
                             </button>
                             <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
                         </div>
@@ -276,8 +277,8 @@
                         </p>
                         <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$2,500/month</p>
                         <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> View Details
+                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
+                                <i class="fa-solid fa-eye"></i> Explore This Home
                             </button>
                             <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
                         </div>
@@ -304,8 +305,8 @@
                         </p>
                         <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$3,300/month</p>
                         <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> View Details
+                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
+                                <i class="fa-solid fa-eye"></i> Explore This Home
                             </button>
                             <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
                         </div>
@@ -332,8 +333,8 @@
                         </p>
                         <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$1,100/month</p>
                         <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> View Details
+                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
+                                <i class="fa-solid fa-eye"></i> Explore This Home
                             </button>
                             <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
                         </div>
@@ -393,6 +394,16 @@
         </div>
         
     </footer>
+
+    <div class="bg-[#3B3B3B] py-2 flex justify-between xl:px-20 lg:px-10 px-5">
+        <div>
+            <p class="text-[#F5F5F5] xl:text-lg text-sm">© 2025 FaltMatch</p>
+        </div>
+        <div class="flex justify-between gap-6">
+            <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline ">Privacy Policy</p>
+            <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">Term of Services</p>
+        </div>
+    </div>
     
 
 

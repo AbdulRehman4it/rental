@@ -15,15 +15,15 @@
                 <!-- Logo -->
                 <div>
                     <a href="index.html">
-                    <img src="../build/img/logo1.png" alt="Company Logo">
+                    <img src="../build/img/logo2.png" alt="Company Logo">
                 </a>
                 </div>
     
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex">
                     <ul class="flex xl:gap-10 gap-4">
-                        <li><a href="companion.html" class="text-[#838383] xl:text-base text-sm font-medium">Browse Listings</a></li>
-                        <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                        <li><a href="companion.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Browse Listings</a></li>
+                        <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Contact Us</a></li>
                     
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="hidden lg:block">
                     <a href="signup.html">
                     <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
-                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                        <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign in
                     </button>
                 </a>
                 </div>
@@ -54,12 +54,12 @@
                     </button>
                 </div>
                 <ul class="text-center space-y-6 mt-10">
-                    <li><a href="companion.html" class="text-[#838383] text-lg font-medium">Browse Listings</a></li>
-                    <li><a href="contact.html" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li><a href="companion.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Browse Listings</a></li>
+                    <li><a href="contact.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Contact Us</a></li>
                   
                     <li>
                         <a href="signup.html">
-                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign in</button>
                     </a>
                     </li>
                 </ul>
@@ -102,12 +102,12 @@
     
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                     <div>
-                        <label class="text-sm text-[#3B3B3B] mt-4">Rent</label>
+                        <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Rent</label>
                         <input type="text" placeholder="Enter Amount" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
                     </div>
     
                     <div>
-                        <label class="text-sm text-[#3B3B3B] mt-4">Include Bills?</label>
+                        <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Include Bills?</label>
                         <select class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]">
                             <option>No</option>
                             <option>Yes</option>
@@ -115,37 +115,91 @@
                     </div>
     
                     <div>
-                        <label class="text-sm text-[#3B3B3B] mt-4">Move-in Date</label>
+                        <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Move-in Date</label>
                         <input type="date" class="w-full p-4 mt-3 border rounded-2xl bg-[#EEEEEE] text-[#838383]" />
                     </div>
     
                     <div>
-                        <label class="text-sm text-[#3B3B3B] mt-4">Lease Length</label>
+                        <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Lease Length</label>
                         <input type="text" placeholder="Specify Duration" class="w-full p-4 mt-3 border rounded-lg bg-[#EEEEEE] text-[#838383]" />
                     </div>
                 </div>
     
                 <div class="mt-4">
-                    <label class="text-sm text-[#3B3B3B] mt-4">Room and Property Description</label>
+                    <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Room and Property Description</label>
                     <textarea rows="3" placeholder="Describe the room and any key features." class="w-full p-4 mt-3 border rounded-lg bg-[#EEEEEE] text-[#838383]"></textarea>
                 </div>
     
                 <div class="mt-4">
-                    <label class="text-sm text-[#3B3B3B] mt-4">Flatmate Profiles (for tenants)</label>
+                    <label class="text-sm text-[#3B3B3B] mt-4 font-semibold">Flatmate Profiles (for tenants)</label>
                     <textarea rows="2" placeholder="Share a little about the present flatmates." class="w-full p-4 mt-3 border rounded-lg bg-[#EEEEEE] text-[#838383]"></textarea>
                 </div>
             </div>
     
             <hr class="my-8 border-gray-300" />
     
-            <!-- Submit Button -->
-            <button class=" bg-[#FFC300] text-[#F5F5F5] font-bold py-3 px-6 rounded-lg">
+            <!-- upload  -->
+           
+            <div x-data="{ images: [] }" class="w-full flex lg:flex-row flex-col items-center lg:gap-6 xl:p-6">
+                <!-- Upload Box (Left Side) -->
+                <div class="bg-[#EEEEEE] p-14 rounded-2xl lg:w-1/2 w-full text-center border-2 border-[#838383] border-dotted">
+                    <h2 class="text-2xl font-semibold text-[#3B3B3B]">Upload Photos</h2>
+                    <p class="text-[#838383] text-sm mt-4">
+                        Showcase your space with high-quality images. Upload up to 10 photos to attract 
+                        potential renters by highlighting key features and unique aspects of your listing.
+                    </p>
+                    <label class="mt-8 inline-flex items-center gap-2 border border-[#FFC300] text-[#FFC300] px-8 py-2 rounded-2xl cursor-pointer font-medium hover:bg-[#FFC300] hover:text-[white] transition">
+                        <i class="fa-solid fa-upload"></i>
+                        Choose File
+                        <input type="file" multiple @change="handleUpload($event)" class="hidden">
+                    </label>
+                </div>
+            
+                <!-- Uploaded Images (Right Side) -->
+                <div class="w-2/3 flex flex-wrap gap-4">
+                    <template x-for="(image, index) in images" :key="index">
+                        <div class="relative w-32 h-32 rounded-xl overflow-hidden shadow-lg">
+                            <img :src="image" class="w-full h-full object-cover" alt="Uploaded Image">
+                            <!-- Delete Button -->
+                            <button @click="images.splice(index, 1)" class="absolute top-2 right-2 bg-[#FFC300] p-1 rounded-full shadow-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <hr class="my-8 border-gray-300" />
+             <!-- Submit Button -->
+             <button class=" bg-[#FFC300] text-[#F5F5F5] font-bold py-3 px-6 rounded-lg">
                 Submit Your Listing
             </button>
         </div>
+        
     </div>
+    
 </section>
 
+
+
+
+
+<script>
+function handleUpload(event) {
+    const files = event.target.files;
+    if (!files.length) return;
+
+    for (let i = 0; i < files.length; i++) {
+        let reader = new FileReader();
+        reader.onload = (e) => {
+            Alpine.store('images').push(e.target.result);
+        };
+        reader.readAsDataURL(files[i]);
+    }
+}
+</script>
 
 
 

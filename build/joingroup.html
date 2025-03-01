@@ -14,14 +14,14 @@
       <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
           <!-- Logo -->
           <div>
-              <img src="../build/img/logo1.png" alt="Company Logo">
+              <img src="../build/img/logo2.png" alt="Company Logo">
           </div>
 
           <!-- Desktop Menu -->
           <div class="hidden lg:flex">
               <ul class="flex xl:gap-10 gap-4">
-                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Browse Listings</a></li>
-                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Browse Listings</a></li>
+                  <li><a href="#" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Contact Us</a></li>
               
               </ul>
           </div>
@@ -29,7 +29,7 @@
           <!-- Sign Up Button (Desktop) -->
           <div class="hidden lg:block">
               <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
-                  <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign up
+                  <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign in
               </button>
           </div>
 
@@ -50,74 +50,106 @@
               </button>
           </div>
           <ul class="text-center space-y-6 mt-10">
-              <li><a href="#" class="text-[#838383] text-lg font-medium">Browse Listings</a></li>
-              <li><a href="#" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+              <li><a href="#" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Browse Listings</a></li>
+              <li><a href="#" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Contact Us</a></li>
             
               <li>
-                  <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign up</button>
+                  <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign in</button>
               </li>
           </ul>
       </div>
   </nav>
   </section>
-  <section class="lg:pt-32 2xl:px-20 lg:px-10 px-5 pt-12">
-    <div class="">
-        <h1 class="flex md:flex-row flex-col lg:justify-start justify-center items-center text-center 2xl:text-8xl xl:text-7xl lg:text-5xl text-4xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Find Your Perfect&nbsp;<img src="../build/img/welimg.png" alt=""> <span class="italic font-bold">&nbsp;FlatMatch</span></h1>
-        <p class="text-[#838383] xl:text-2xl text-lg lg:text-start text-center mt-2">Find your <span class="font-semibold text-[#3B3B3B]">Krews</span> to find your   <span class="font-semibold text-[#3B3B3B]">perfect home</span></p>
+  <!-- search section -->
+  <section >
+    <div class="lg:pt-32 2xl:px-20 lg:px-10 px-5 pt-12">
+        <div class="px-4">
+            <h1 class=" 2xl:text-7xl xl:text-5xl lg:text-4xl text-3xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Find Your Perfect  <span class="text-[#FFC300] font-bold">Krews</span> </h1>
+            <p class="2xl:text-3xl lg:text-2xl text-lg text-[#838383] pt-8">Find your <span class="text-[#3B3B3B]"> Krews </span>to find your <span class="text-[#3B3B3B]"> perfect home</span></p>
+        </div>
+      
+    
+    <!-- find your name  -->
+      <div class="mt-8 bg-white shadow-md rounded-[20px] p-8">
+        <div>
+            <h1 class="text-[#3B3B3B] 2xl:text-[26px] text-xl font-semibold">Find Your Next Home</h1>
+        </div>
+    <div class="flex flex-col lg:flex-row gap-5 pt-5">
+                    
+        <select class="flex-1 p-2 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+            <option><i class="fa-solid fa-location-dot"></i> Location</option>
+        </select>
+        <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
+            <option><i class="fa-solid fa-dollar-sign"></i> Budget</option>
+        </select>
+        <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#867575]">
+            <option><i class="fa-solid fa-house text-[#838383]"></i> Members</option>
+        </select>
+       
+        <button class="bg-[#FFC300] text-white px-32 py-3 rounded-[20px]">Search</button></div>
+      
     </div>
-  </section>
+</section>
 
-<!-- find your name  -->
-  <div class="mt-8 bg-white shadow-md rounded-[20px] p-8 2xl:mx-20 lg:mx-10 mx-5">
-    <div>
-        <h1 class="text-[#3B3B3B] 2xl:text-[26px] text-xl font-semibold">Find Your Next Home</h1>
-    </div>
-<div class="flex flex-col lg:flex-row gap-4  pt-5">
-                
-    <select class="flex-1 p-2 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
-        <option><i class="fa-solid fa-location-dot"></i> Location</option>
-    </select>
-    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#838383]">
-        <option><i class="fa-solid fa-dollar-sign"></i> Budget</option>
-    </select>
-    <select class="flex-1 p-1 border rounded-[20px] bg-[#EEEEEE] text-[#867575]">
-        <option><i class="fa-solid fa-house text-[#838383]"></i> Property Type</option>
-    </select>
-   
-    <button class="bg-[#FFC300] text-white px-32 py-3 rounded-[20px]">Search</button></div>
-</div>
+<section class="2xl:px-20 lg:px-10 px-5 pt-10 2xl:pb-20 pb-10">
+      
+  <div class="mt-6">
+      <h3 class="text-[#838383] font-semibold 2xl:text-2xl lg:text-xl text-lg">Current Search</h3>
+     
+     
+  </div>
+  <div class="flex flex-wrap gap-2 bg-[#EEEEEE]  mt-4">
+      <span class=" text-[#3B3B3B] bg-[#F5F5F5] px-3 py-1 rounded-md xl:text-base text-sm"><span class="text-[#FFC300]">Location:</span> London, UK <button class=" text-red-500">&times;</button></span>
+      <span class=" text-[#3B3B3B] bg-[#F5F5F5] px-3 py-1 rounded-md xl:text-base text-sm"><span class="text-[#FFC300]">Budget:</span>  £400-£800 per person <button class=" text-red-500">&times;</button></span>
+      <span class=" text-[#3B3B3B] bg-[#F5F5F5] px-3 py-1 rounded-md xl:text-base text-sm"><span class="text-[#FFC300]">Members:</span> 5 <button class=" text-red-500">&times;</button></span>
+      <span class=" text-[#3B3B3B] bg-[#F5F5F5] px-3 py-1 rounded-md xl:text-base text-sm"><span class="text-[#FFC300]">Group:</span> Require 2 persons <button class=" text-red-500">&times;</button></span>
+    
+  </div>
+  <hr  class="border mt-10">
+</section>
+
+
 
 
 <!-- cards -->
     <section>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 py-10 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 pb-16 2xl:gap-10 gap-5">
                 <!-- Card 1 -->
-                <div class=" bg-white shadow-md rounded-lg overflow-hidden ">
-                    <div class="">
-                        <div class="flex justify-center gap-2 px-2 py-2">
-                            <img src="./image/1cradpic1.png" alt="Property Image" class="w-32 rounded-2xl h-36 object-cover">
-                        <img src="./image/1cardpic2.png" alt="Property Image" class="w-32 rounded-2xl h-36 object-cover">
-                        </div>
-                        <div class="flex justify-center gap-2 px-2 py-2">
-                            <img src="./image/1cardpic3.png" alt="Property Image" class="w-32 rounded-2xl h-32 object-cover">
-                        <img src="./image/1cardpic4.png" alt="Property Image" class="w-32 rounded-2xl h-32 object-cover">
-                        </div>
+                <div class=" bg-white shadow-md rounded-3xl overflow-hidden p-5">
+                    <div class="flex justify-center">
+                        <img src="img/room1.png" alt="">
                         
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                    <div class="pt-5">
+                        <h3 class="text-lg text-[#3B3B3B] font-semibold">The Bohemian Base</h3>
                         
                         <div class="text-[#3B3B3B] text-sm items-center gap-2">
                           <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-[#FFC300] "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
                             <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
-                            <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
-                            <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-yellow-500"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                            <p class="text-[#838383] text-sm"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                            <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
                         </div>
-                        <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                        <hr class="my-2">
+                        <p class="text-sm py-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                        <hr class="my-2">
+
+                        <div class="flex justify-between items-center pt-4">
+                          <div class="flex gap-2">
+                            <img src="img/ross.png" alt="">
+                            <div>
+                              <p class="text-xs text-[#838383]">Host</p>
+                              <h1 class="text-sm text-[#3B3B3B]">Emily Clarke</h1>
+                            </div>
+                            
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
+                          </div>
+                        </div>
                              <!-- icon button -->
 
                             <div class="flex items-center justify-center pt-8">
-                              <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-8 py-2 rounded-lg   w-full sm:w-auto">
+                              <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-14 py-2 rounded-lg   w-full sm:w-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
                                   <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
                                 </svg>
@@ -129,32 +161,41 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
-                  <div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/2cardpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/2cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/2cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/2cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
+                <div class="bg-white shadow-md  rounded-3xl overflow-hidden p-5">
+                  <div class="flex justify-center">
+                  <img src="img/room2.png" alt="">
                       
                   </div>
-                  <div class="p-4">
-                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                  <div class="pt-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Creative Hub </h3>
                       
                       <div class="text-[#3B3B3B] text-sm items-center gap-2">
                         <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-[#FFC300] "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
                           <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
-                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
-                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
                       </div>
-                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                      <hr class="my-2">
+                      <p class="text-sm py-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                      <hr class="my-2">
+
+                      <div class="flex justify-between items-center pt-4">
+                        <div class="flex gap-2">
+                          <img src="img/ross.png" alt="">
+                          <div>
+                            <p class="text-xs text-[#838383]">Host</p>
+                            <h1 class="text-sm text-[#3B3B3B]">Emily Clarke</h1>
+                          </div>
+                          
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
+                        </div>
+                      </div>
                            <!-- icon button -->
 
                           <div class="flex items-center justify-center pt-6">
-                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-8 py-2 rounded-lg   w-full sm:w-auto">
+                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-14 py-2 rounded-lg   w-full sm:w-auto">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
                                 <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
                               </svg>
@@ -166,32 +207,41 @@
               </div>
 
                 <!-- card 3 -->
-                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
-                  <div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/1cradpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/1cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/1cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/1cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
+                <div class="bg-white shadow-md  rounded-3xl overflow-hidden p-5">
+                  <div class="flex justify-center">
+                      <img src="img/room3.png" alt="">
                       
                   </div>
-                  <div class="p-4">
-                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                  <div class="pt-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Craft Connect</h3>
                       
                       <div class="text-[#3B3B3B] text-sm items-center gap-2">
                         <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-[#FFC300] "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
                           <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
-                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
-                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
                       </div>
-                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                      <hr class="my-2">
+                        <p class="text-sm py-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                        <hr class="my-2">
+
+                        <div class="flex justify-between items-center pt-4">
+                          <div class="flex gap-2">
+                            <img src="img/ross.png" alt="">
+                            <div>
+                              <p class="text-xs text-[#838383]">Host</p>
+                              <h1 class="text-sm text-[#3B3B3B]">Emily Clarke</h1>
+                            </div>
+                            
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
+                          </div>
+                        </div>
                            <!-- icon button -->
 
                           <div class="flex items-center justify-center pt-6">
-                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-8 py-2 rounded-lg   w-full sm:w-auto">
+                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-14 py-2 rounded-lg   w-full sm:w-auto">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
                                 <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
                               </svg>
@@ -205,32 +255,41 @@
                 <!-- card 4 -->
 
 
-                <div class="bg-white shadow-md p-2 rounded-lg overflow-hidden">
-                  <div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/1cradpic1.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/1cardpic2.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
-                      <div class="flex justify-center gap-2 px-2 py-2">
-                          <img src="./image/1cardpic3.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      <img src="./image/1cardpic4.png" alt="Property Image" class="xl:w-36  w-32 rounded-2xl h-32 object-cover">
-                      </div>
+                <div class="bg-white shadow-md rounded-3xl overflow-hidden p-5">
+                  <div class="flex justify-center">
+                     <img src="img/room4.png" alt="">
                       
                   </div>
-                  <div class="p-4">
-                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Royal oaks</h3>
+                  <div class="pt-4">
+                      <h3 class="text-lg text-[#3B3B3B] font-semibold">Heritage Den</h3>
                       
                       <div class="text-[#3B3B3B] text-sm items-center gap-2">
                         <p class="text-sm  pt-4 text-[#838383] ">   <i class="fa-solid fa-location-dot text-[#FFC300] "></i><span class="text-[#3B3B3B] pl-4 text-[16px]">Location:</span> Brooklyn, NY - Williamsburg</p>
                           <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-dollar-sign text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Budget: </span> $800/month per person</p>
-                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
-                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
+                          <p class="text-[#838383] text-sm"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Current Members:  </span> 3</p>
+                          <p class="text-[#838383] text-sm py-2"><i class="fa-solid fa-user-group text-[#FFC300]"></i><span class="text-[#3B3B3B] pl-4">Looking for:  </span> 1 member</p>
                       </div>
-                      <p class="text-sm pt-3  mt-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                      <hr class="my-2">
+                      <p class="text-sm py-2 text-[#838383]"><span class="text-lg font-semibold text-[#3B3B3B] ">Household Vibe:</span> Quiet, Pet-Friendly</p>
+                      <hr class="my-2">
+
+                      <div class="flex justify-between items-center pt-4">
+                        <div class="flex gap-2">
+                          <img src="img/ross.png" alt="">
+                          <div>
+                            <p class="text-xs text-[#838383]">Host</p>
+                            <h1 class="text-sm text-[#3B3B3B]">Emily Clarke</h1>
+                          </div>
+                          
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
+                        </div>
+                      </div>
                            <!-- icon button -->
 
-                          <div class="flex items-center justify-center pt-6">
-                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-8 py-2 rounded-lg   w-full sm:w-auto">
+                          <div class="w-full flex items-center justify-center pt-6">
+                            <button class="flex items-center justify-center gap-2 border-2 border-[#FFC300] text-[#FFC300] px-14 py-2 rounded-lg  w-full sm:w-auto">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
                                 <path d="M15.75 9.75a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM6 20.25a6 6 0 1112 0M18.75 14.25h3m-1.5-1.5v3"></path>
                               </svg>
