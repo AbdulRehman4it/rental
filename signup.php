@@ -17,17 +17,11 @@
 
 </head>
 <body class="bg-[#F5F5F5]">
-<section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[1080px] h-[700px]" style="background-image: url(./img/BG.png);">
+<section class=" 2xl:px-20 xl:px-10 px-5 " >
    <?php  
     require_once './inc/nav.php';
 ?>
-        <!-- Hero Section -->
-        <div class="xl:pt-60 pt-20 text-center">
-            <p class="2xl:text-[44px] xl:text-4xl md:text-3xl text-2xl capitalize text-[#F5F5F5] italic ">Your next chapter begins here</p>
-            <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light pt-2">Your <span class="italic font-bold">Perfect</span> Home Awaits</h1>
-            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Explore thousands of listings and find your dream flat or a compatible roommate with ease.</p>
-           <a href="companion.html"> <button class="bg-[#FFC300] px-8 py-4 mt-8 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
-        </div>
+        
     </section>
 <section>
     <div class="flex lg:flex-row flex-col  items-center justify-between px-10 py-10 gap-10">
