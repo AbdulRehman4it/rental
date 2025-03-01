@@ -5,7 +5,7 @@ require_once './inc/header.php';
 <body class="bg-[#EEEEEE]">
 
         <!-- navbar section  -->
-    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[800px] h-[600px]" style="background-image: url(../build/img/BG.png);">
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[800px] h-[600px]" style="background-image: url(./img/BG.png);">
     <?php  
     require_once './inc/nav.php';
 ?>
