@@ -241,16 +241,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Scroll effect - hides bubble screen when scrolling
     let scrolled = false;
-    window.addEventListener("scroll", () => {
-        if (!scrolled) {
-            bubbleScreen.style.transform = "translateY(-100%)";
-            setTimeout(() => {
-                bubbleScreen.style.display = "none"; // Hide after animation
-                newPage.classList.add("block"); // Ensure new content is visible
-            }, 1000);
-            scrolled = true;
-        }
-    });
+        window.addEventListener("scroll", () => {
+            if (!scrolled) {
+                bubbleScreen.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    bubbleContainer.innerHTML = "";
+                }, 1000);
+                scrolled = true;
+            }
+        });
 });
 
 </script>
