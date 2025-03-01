@@ -5,64 +5,9 @@ require_once './inc/header.php';
 <body>
          <!-- navbar section  -->
          <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 h-full" style="background-image: url(../build/img/combg.png);">
-            <nav class="pt-10 relative">
-                <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
-                    <!-- Logo -->
-                    <div>
-                        <a href="index.html">
-                        <img src="img/Logo2.png" alt="Company Logo">
-                    </a>
-                    </div>
-        
-                    <!-- Desktop Menu -->
-                    <div class="hidden lg:flex">
-                        <ul class="flex xl:gap-10 gap-4">
-                            <li><a href="companion.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]" >Browse Listings</a></li>
-                            <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Contact Us</a></li>
-                        
-                        </ul>
-                    </div>
-        
-                    <!-- Sign Up Button (Desktop) -->
-                    <div class="hidden lg:block">
-                        <a href="signup.html">
-                        <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
-                            <i class="fa-solid fa-user"></i>&nbsp;&nbsp; Sign in
-                        </button>
-                    </a>
-                    </div>
-        
-                    <!-- Mobile Menu Button -->
-                    <div class="lg:hidden">
-                        <button id="menu-btn" class="text-[#838383] focus:outline-none">
-                            <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- Mobile Menu (Hidden by Default) -->
-                <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
-                    <div class="flex justify-between items-center p-5">
-                        <a href="index.html">
-                            <img src="../build/img/Logo2.png" alt="Company Logo">
-                        </a>
-                        <button id="close-btn" class="text-[#838383] text-2xl">
-                            <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
-                        </button>
-                    </div>
-                    <ul class="text-center space-y-6 mt-10">
-                        <li><a href="companion.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Browse Listings</a></li>
-                        <li><a href="contact.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Contact Us</a></li>
-                      
-                        <li>
-                            <a href="signup.html">
-                            <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4">Sign in</button>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        
+         <?php  
+    require_once './inc/nav.php';
+?>
             <!-- Hero Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 mt-6 xl:py-36 py-20 2xl:px-28 xl:px-44 lg:px-10 px-5">
                 <div class="bg-white p-7 rounded-[50px] shadow text-center"> <!--should go to flatemate page-->
