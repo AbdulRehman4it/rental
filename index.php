@@ -7,12 +7,7 @@ require_once './inc/header.php';
         <div id="bubbles" class="absolute w-full h-full bg-[black]" >
             <!-- Dynamically generated bubbles -->
         </div>
-        <div id="bubbles2" class="absolute w-full h-full bg-[red]">
-            <!-- Dynamically generated bubbles -->
-        </div>
-        <div id="bubbles3" class="absolute w-full h-full bg-[blue]">
-            <!-- Dynamically generated bubbles -->
-        </div>
+        
         <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4">
             <button class="bg-white p-3 rounded-lg shadow">Find your Kosy Krew</button>
             <button class="bg-white p-3 rounded-lg shadow">Browse properties</button>
@@ -157,267 +152,75 @@ require_once './inc/header.php';
 
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
  <!-- bubbles  -->
+    
  <script>
     document.addEventListener("DOMContentLoaded", () => {
+        const bubbleContainer = document.getElementById("bubbles");
         const bubbleScreen = document.getElementById("bubble-screen");
+        const bubbles = [];
+        const colors = ["red", "blue", "green", "yellow", "purple"]; // 5 different colors
 
-        function createBubbleEffect(containerId, bubbleClass, count) {
-            const bubbleContainer = document.getElementById(containerId);
-            const bubbles = [];
+        function createBubble(index) {
+            let bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            let size = Math.random() * 80 + 40;
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.backgroundColor = colors[index]; // Assign a unique color
+            bubble.style.position = "absolute";
+            bubble.style.borderRadius = "50%";
+            
+            let randomX = Math.random() * (window.innerWidth - size);
+            let randomY = Math.random() * (window.innerHeight - size);
+            bubble.style.left = `${randomX}px`;
+            bubble.style.top = `${randomY}px`;
+            
+            bubble.addEventListener("click", () => {
+                bubble.remove();
+            });
 
-            function createBubble() {
-                let bubble = document.createElement("div");
-                bubble.classList.add(bubbleClass);
-                let size = Math.random() * 80 + 40;
-                bubble.style.width = `${size}px`;
-                bubble.style.height = `${size}px`;
-                bubble.style.position = "absolute";
-                let randomX = Math.random() * (window.innerWidth - size);
-                let randomY = Math.random() * (window.innerHeight - size);
-                bubble.style.left = `${randomX}px`;
-                bubble.style.top = `${randomY}px`;
-
-                bubble.addEventListener("click", () => {
-                    bubble.remove();
-                });
-
-                bubbleContainer.appendChild(bubble);
-
-                bubbles.push({
-                    element: bubble,
-                    vx: (Math.random() - 0.5) * 4,
-                    vy: (Math.random() - 0.5) * 4
-                });
-            }
-
-            for (let i = 0; i < count; i++) {
-                createBubble();
-            }
-
-            function animateBubbles() {
-                bubbles.forEach(bubble => {
-                    let rect = bubble.element.getBoundingClientRect();
-                    let x = parseFloat(bubble.element.style.left);
-                    let y = parseFloat(bubble.element.style.top);
-
-                    if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
-                    if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
-
-                    bubble.element.style.left = `${x + bubble.vx}px`;
-                    bubble.element.style.top = `${y + bubble.vy}px`;
-                });
-                requestAnimationFrame(animateBubbles);
-            }
-
-            animateBubbles();
+            bubbleContainer.appendChild(bubble);
+            
+            bubbles.push({
+                element: bubble,
+                vx: (Math.random() - 0.5) * 4,
+                vy: (Math.random() - 0.5) * 4
+            });
         }
 
-        // Initialize bubbles for each container
-        createBubbleEffect("bubbles", "bubble", 15);
-        createBubbleEffect("bubbles2", "bubble2", 15);
-        createBubbleEffect("bubbles3", "bubble3", 15);
+        for (let i = 0; i < 5; i++) { // Generate exactly 5 bubbles
+            createBubble(i);
+        }
+
+        function animateBubbles() {
+            bubbles.forEach(bubble => {
+                let rect = bubble.element.getBoundingClientRect();
+                let x = parseFloat(bubble.element.style.left);
+                let y = parseFloat(bubble.element.style.top);
+
+                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
+                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
+
+                bubble.element.style.left = `${x + bubble.vx}px`;
+                bubble.element.style.top = `${y + bubble.vy}px`;
+            });
+            requestAnimationFrame(animateBubbles);
+        }
+
+        animateBubbles();
 
         let scrolled = false;
         window.addEventListener("scroll", () => {
             if (!scrolled) {
                 bubbleScreen.style.transform = "translateY(-100%)";
                 setTimeout(() => {
-                    document.getElementById("bubbles").innerHTML = "";
-                    document.getElementById("bubbles2").innerHTML = "";
-                    document.getElementById("bubbles3").innerHTML = "";
+                    bubbleContainer.innerHTML = "";
                 }, 1000);
                 scrolled = true;
             }
         });
     });
 </script>
- <!-- <script>
-    // bubble 1
-    document.addEventListener("DOMContentLoaded", () => {
-        const bubbleContainer = document.getElementById("bubbles");
-        const bubbleScreen = document.getElementById("bubble-screen");
-        const bubbles = [];
-        
-        function createBubble() {
-            let bubble = document.createElement("div");
-            bubble.classList.add("bubble");
-            let size = Math.random() * 80 + 40;
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            let randomX = Math.random() * (window.innerWidth - size);
-            let randomY = Math.random() * (window.innerHeight - size);
-            bubble.style.left = `${randomX}px`;
-            bubble.style.top = `${randomY}px`;
-            
-            bubble.addEventListener("click", () => {
-                bubble.remove();
-            });
-            
-            bubbleContainer.appendChild(bubble);
-            
-            bubbles.push({
-                element: bubble,
-                vx: (Math.random() - 0.5) * 4,
-                vy: (Math.random() - 0.5) * 4
-            });
-        }
-        
-        for (let i = 0; i < 15; i++) {
-            createBubble();
-        }
-        
-        function animateBubbles() {
-            bubbles.forEach(bubble => {
-                let rect = bubble.element.getBoundingClientRect();
-                let x = parseFloat(bubble.element.style.left);
-                let y = parseFloat(bubble.element.style.top);
-                
-                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
-                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
-                
-                bubble.element.style.left = `${x + bubble.vx}px`;
-                bubble.element.style.top = `${y + bubble.vy}px`;
-            });
-            requestAnimationFrame(animateBubbles);
-        }
-        
-        animateBubbles();
-        
-        let scrolled = false;
-        window.addEventListener("scroll", () => {
-            if (!scrolled) {
-                bubbleScreen.style.transform = "translateY(-100%)";
-                setTimeout(() => {
-                    bubbleContainer.innerHTML = "";
-                }, 1000);
-                scrolled = true;
-            }
-        });
-    });
-    // bubble 2
-    document.addEventListener("DOMContentLoaded", () => {
-        const bubbleContainer = document.getElementById("bubbles2");
-        const bubbleScreen = document.getElementById("bubble-screen");
-        const bubbles = [];
-        
-        function createBubble() {
-            let bubble = document.createElement("div");
-            bubble.classList.add("bubble2");
-            let size = Math.random() * 80 + 40;
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            let randomX = Math.random() * (window.innerWidth - size);
-            let randomY = Math.random() * (window.innerHeight - size);
-            bubble.style.left = `${randomX}px`;
-            bubble.style.top = `${randomY}px`;
-            
-            bubble.addEventListener("click", () => {
-                bubble.remove();
-            });
-            
-            bubbleContainer.appendChild(bubble);
-            
-            bubbles.push({
-                element: bubble,
-                vx: (Math.random() - 0.5) * 4,
-                vy: (Math.random() - 0.5) * 4
-            });
-        }
-        
-        for (let i = 0; i < 15; i++) {
-            createBubble();
-        }
-        
-        function animateBubbles() {
-            bubbles.forEach(bubble => {
-                let rect = bubble.element.getBoundingClientRect();
-                let x = parseFloat(bubble.element.style.left);
-                let y = parseFloat(bubble.element.style.top);
-                
-                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
-                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
-                
-                bubble.element.style.left = `${x + bubble.vx}px`;
-                bubble.element.style.top = `${y + bubble.vy}px`;
-            });
-            requestAnimationFrame(animateBubbles);
-        }
-        
-        animateBubbles();
-        
-        let scrolled = false;
-        window.addEventListener("scroll", () => {
-            if (!scrolled) {
-                bubbleScreen.style.transform = "translateY(-100%)";
-                setTimeout(() => {
-                    bubbleContainer.innerHTML = "";
-                }, 1000);
-                scrolled = true;
-            }
-        });
-    });
-    //bubble 3
-    document.addEventListener("DOMContentLoaded", () => {
-        const bubbleContainer = document.getElementById("bubbles3");
-        const bubbleScreen = document.getElementById("bubble-screen");
-        const bubbles = [];
-        
-        function createBubble() {
-            let bubble = document.createElement("div");
-            bubble.classList.add("bubble3");
-            let size = Math.random() * 80 + 40;
-            bubble.style.width = `${size}px`;
-            bubble.style.height = `${size}px`;
-            let randomX = Math.random() * (window.innerWidth - size);
-            let randomY = Math.random() * (window.innerHeight - size);
-            bubble.style.left = `${randomX}px`;
-            bubble.style.top = `${randomY}px`;
-            
-            bubble.addEventListener("click", () => {
-                bubble.remove();
-            });
-            
-            bubbleContainer.appendChild(bubble);
-            
-            bubbles.push({
-                element: bubble,
-                vx: (Math.random() - 0.5) * 4,
-                vy: (Math.random() - 0.5) * 4
-            });
-        }
-        
-        for (let i = 0; i < 15; i++) {
-            createBubble();
-        }
-        
-        function animateBubbles() {
-            bubbles.forEach(bubble => {
-                let rect = bubble.element.getBoundingClientRect();
-                let x = parseFloat(bubble.element.style.left);
-                let y = parseFloat(bubble.element.style.top);
-                
-                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
-                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
-                
-                bubble.element.style.left = `${x + bubble.vx}px`;
-                bubble.element.style.top = `${y + bubble.vy}px`;
-            });
-            requestAnimationFrame(animateBubbles);
-        }
-        
-        animateBubbles();
-        
-        let scrolled = false;
-        window.addEventListener("scroll", () => {
-            if (!scrolled) {
-                bubbleScreen.style.transform = "translateY(-100%)";
-                setTimeout(() => {
-                    bubbleContainer.innerHTML = "";
-                }, 1000);
-                scrolled = true;
-            }
-        });
-    });
-</script> -->
+
 </body>
 </html>
