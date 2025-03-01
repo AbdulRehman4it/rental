@@ -238,21 +238,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     animateBubbles();
-    let scrolled = false;
-window.addEventListener("scroll", () => {
-    if (!scrolled) {
-        bubbleScreen.style.transition = "transform 1s ease-in-out";
-        bubbleScreen.style.transform = "translateY(-100%)";
+// 
 
-        setTimeout(() => {
-            bubbleContainer.innerHTML = ""; // Clear bubbles
-            bubbleScreen.style.display = "none"; // Hide completely
-            document.getElementById("new-page").scrollIntoView({ behavior: "smooth" });
-        }, 1000); // Matches the CSS transition duration
+let scrolled = false;
+        window.addEventListener("scroll", () => {
+            if (!scrolled) {
+                bubbleScreen.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    bubbleContainer.innerHTML = "";
+                }, 1000);
+                scrolled = true;
+            }
+        });
 
-        scrolled = true;
-    }
-});
 });
 
 </script>
