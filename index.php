@@ -241,15 +241,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Scroll effect - hides bubble screen when scrolling
     let scrolled = false;
-        window.addEventListener("scroll", () => {
-            if (!scrolled) {
-                bubbleScreen.style.transform = "translateY(-100%)";
-                setTimeout(() => {
-                    bubbleContainer.innerHTML = "";
-                }, 1000);
-                scrolled = true;
-            }
-        });
+window.addEventListener("scroll", () => {
+    if (!scrolled) {
+        bubbleScreen.style.transform = "translateY(-100%)";
+
+        setTimeout(() => {
+            bubbleContainer.innerHTML = ""; // Clear bubbles
+            bubbleScreen.style.display = "none"; // Hide after animation
+            document.documentElement.scrollTop = 0; // Scroll to the top of the page
+        }, 1000);
+
+        scrolled = true;
+    }
+});
 });
 
 </script>
