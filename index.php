@@ -247,21 +247,12 @@ window.addEventListener("scroll", () => {
         setTimeout(() => {
             bubbleContainer.innerHTML = ""; // Clear bubbles
             bubbleScreen.style.display = "none"; // Hide completely
-            
-            // Scroll 100px down from the top of new-page div
-            const newPage = document.getElementById("new-page");
-            window.scrollTo({
-                top: newPage.offsetTop + 100, // Offset the scroll position by 100px
-                behavior: "smooth" // Smooth scroll effect
-            });
-
+            document.getElementById("new-page").scrollIntoView({ behavior: "smooth" });
         }, 1000); // Matches the CSS transition duration
 
         scrolled = true;
     }
 });
-
-
 });
 
 </script>
