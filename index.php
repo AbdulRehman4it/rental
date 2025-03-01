@@ -241,18 +241,29 @@ document.addEventListener("DOMContentLoaded", () => {
     let scrolled = false;
 window.addEventListener("scroll", () => {
     if (!scrolled) {
-        bubbleScreen.style.transition = "transform 1s ease-in-out";
+        // Make the bubble screen transition slower
+        bubbleScreen.style.transition = "transform 1.5s ease-in-out";
         bubbleScreen.style.transform = "translateY(-100%)";
 
         setTimeout(() => {
             bubbleContainer.innerHTML = ""; // Clear bubbles
             bubbleScreen.style.display = "none"; // Hide completely
-            document.getElementById("new-page").scrollIntoView({ behavior: "smooth" });
-        }, 1000); // Matches the CSS transition duration
+
+            // Add a slight delay before scrolling for a smoother effect
+            setTimeout(() => {
+                const newPage = document.getElementById("new-page");
+                window.scrollTo({
+                    top: newPage.offsetTop + 100, // Scroll 100px down from the top of new-page
+                    behavior: "smooth"
+                });
+            }, 500); // Delay to make it feel more natural
+
+        }, 1500); // Increased duration for a smoother transition
 
         scrolled = true;
     }
-                    });
+});
+
 });
 
 </script>
