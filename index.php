@@ -154,22 +154,18 @@ require_once './inc/header.php';
  <!-- bubbles  -->
     
  <script>
+    // bubble 1
     document.addEventListener("DOMContentLoaded", () => {
         const bubbleContainer = document.getElementById("bubbles");
         const bubbleScreen = document.getElementById("bubble-screen");
         const bubbles = [];
-        const colors = ["red", "blue", "green", "yellow", "purple"]; // 5 different colors
-
-        function createBubble(index) {
+        
+        function createBubble() {
             let bubble = document.createElement("div");
             bubble.classList.add("bubble");
             let size = Math.random() * 80 + 40;
             bubble.style.width = `${size}px`;
             bubble.style.height = `${size}px`;
-            bubble.style.backgroundColor = colors[index]; // Assign a unique color
-            bubble.style.position = "absolute";
-            bubble.style.borderRadius = "50%";
-            
             let randomX = Math.random() * (window.innerWidth - size);
             let randomY = Math.random() * (window.innerHeight - size);
             bubble.style.left = `${randomX}px`;
@@ -178,7 +174,7 @@ require_once './inc/header.php';
             bubble.addEventListener("click", () => {
                 bubble.remove();
             });
-
+            
             bubbleContainer.appendChild(bubble);
             
             bubbles.push({
@@ -187,28 +183,28 @@ require_once './inc/header.php';
                 vy: (Math.random() - 0.5) * 4
             });
         }
-
-        for (let i = 0; i < 5; i++) { // Generate exactly 5 bubbles
-            createBubble(i);
+        
+        for (let i = 0; i < 15; i++) {
+            createBubble();
         }
-
+        
         function animateBubbles() {
             bubbles.forEach(bubble => {
                 let rect = bubble.element.getBoundingClientRect();
                 let x = parseFloat(bubble.element.style.left);
                 let y = parseFloat(bubble.element.style.top);
-
+                
                 if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
                 if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
-
+                
                 bubble.element.style.left = `${x + bubble.vx}px`;
                 bubble.element.style.top = `${y + bubble.vy}px`;
             });
             requestAnimationFrame(animateBubbles);
         }
-
+        
         animateBubbles();
-
+        
         let scrolled = false;
         window.addEventListener("scroll", () => {
             if (!scrolled) {
@@ -220,7 +216,7 @@ require_once './inc/header.php';
             }
         });
     });
+    
 </script>
-
 </body>
 </html>
