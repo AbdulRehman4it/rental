@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let scrolled = false;
         window.addEventListener("scroll", () => {
             if (!scrolled) {
-                bubbleScreen.style.transform = "translateY(-80%)";
+                bubbleScreen.style.transform = "translateY(-100%)";
                 setTimeout(() => {
                     bubbleContainer.innerHTML = "";
                 }, 1000);
