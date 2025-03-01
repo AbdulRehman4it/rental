@@ -12,7 +12,7 @@
                     <ul class="flex xl:gap-10 gap-4">
                         <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
                         <li><a href="search.php" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
-                        <  <!-- Companion Dropdown -->
+                          <!-- Companion Dropdown -->
                 <li class="relative group">
                     <a href="#" class="text-[#838383] xl:text-base text-sm font-medium flex items-center">
                         Companion <i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
