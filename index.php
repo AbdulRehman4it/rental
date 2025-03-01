@@ -4,10 +4,13 @@ require_once './inc/header.php';
 ?>
 <body class="overflow-x-hidden ">
     <div id="bubble-screen" class="fixed top-0 left-0 h-screen w-screen bg-[#EEEEEE] overflow-hidden transition-transform duration-1000 flex items-center justify-center">
-        <div id="bubbles" class="absolute w-full h-full" >
+        <div id="bubbles" class="absolute w-full h-full bg-[black]" >
             <!-- Dynamically generated bubbles -->
         </div>
-        <div id="bubbles" class="absolute w-full h-full">
+        <div id="bubbles2" class="absolute w-full h-full bg-[red]">
+            <!-- Dynamically generated bubbles -->
+        </div>
+        <div id="bubbles3" class="absolute w-full h-full bg-[blue]">
             <!-- Dynamically generated bubbles -->
         </div>
         <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4">
@@ -156,6 +159,7 @@ require_once './inc/header.php';
  <!-- bubbles  -->
     
  <script>
+    // bubble 1
     document.addEventListener("DOMContentLoaded", () => {
         const bubbleContainer = document.getElementById("bubbles");
         const bubbleScreen = document.getElementById("bubble-screen");
@@ -164,6 +168,130 @@ require_once './inc/header.php';
         function createBubble() {
             let bubble = document.createElement("div");
             bubble.classList.add("bubble");
+            let size = Math.random() * 80 + 40;
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            let randomX = Math.random() * (window.innerWidth - size);
+            let randomY = Math.random() * (window.innerHeight - size);
+            bubble.style.left = `${randomX}px`;
+            bubble.style.top = `${randomY}px`;
+            
+            bubble.addEventListener("click", () => {
+                bubble.remove();
+            });
+            
+            bubbleContainer.appendChild(bubble);
+            
+            bubbles.push({
+                element: bubble,
+                vx: (Math.random() - 0.5) * 4,
+                vy: (Math.random() - 0.5) * 4
+            });
+        }
+        
+        for (let i = 0; i < 15; i++) {
+            createBubble();
+        }
+        
+        function animateBubbles() {
+            bubbles.forEach(bubble => {
+                let rect = bubble.element.getBoundingClientRect();
+                let x = parseFloat(bubble.element.style.left);
+                let y = parseFloat(bubble.element.style.top);
+                
+                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
+                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
+                
+                bubble.element.style.left = `${x + bubble.vx}px`;
+                bubble.element.style.top = `${y + bubble.vy}px`;
+            });
+            requestAnimationFrame(animateBubbles);
+        }
+        
+        animateBubbles();
+        
+        let scrolled = false;
+        window.addEventListener("scroll", () => {
+            if (!scrolled) {
+                bubbleScreen.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    bubbleContainer.innerHTML = "";
+                }, 1000);
+                scrolled = true;
+            }
+        });
+    });
+    // bubble 2
+    document.addEventListener("DOMContentLoaded", () => {
+        const bubbleContainer = document.getElementById("bubbles2");
+        const bubbleScreen = document.getElementById("bubble-screen");
+        const bubbles = [];
+        
+        function createBubble() {
+            let bubble = document.createElement("div");
+            bubble.classList.add("bubble2");
+            let size = Math.random() * 80 + 40;
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            let randomX = Math.random() * (window.innerWidth - size);
+            let randomY = Math.random() * (window.innerHeight - size);
+            bubble.style.left = `${randomX}px`;
+            bubble.style.top = `${randomY}px`;
+            
+            bubble.addEventListener("click", () => {
+                bubble.remove();
+            });
+            
+            bubbleContainer.appendChild(bubble);
+            
+            bubbles.push({
+                element: bubble,
+                vx: (Math.random() - 0.5) * 4,
+                vy: (Math.random() - 0.5) * 4
+            });
+        }
+        
+        for (let i = 0; i < 15; i++) {
+            createBubble();
+        }
+        
+        function animateBubbles() {
+            bubbles.forEach(bubble => {
+                let rect = bubble.element.getBoundingClientRect();
+                let x = parseFloat(bubble.element.style.left);
+                let y = parseFloat(bubble.element.style.top);
+                
+                if (x + rect.width >= window.innerWidth || x <= 0) bubble.vx *= -1;
+                if (y + rect.height >= window.innerHeight || y <= 0) bubble.vy *= -1;
+                
+                bubble.element.style.left = `${x + bubble.vx}px`;
+                bubble.element.style.top = `${y + bubble.vy}px`;
+            });
+            requestAnimationFrame(animateBubbles);
+        }
+        
+        animateBubbles();
+        
+        let scrolled = false;
+        window.addEventListener("scroll", () => {
+            if (!scrolled) {
+                bubbleScreen.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    bubbleContainer.innerHTML = "";
+                }, 1000);
+                scrolled = true;
+            }
+        });
+    });
+    //bubble 3
+    document.addEventListener("DOMContentLoaded", () => {
+        const bubbleContainer = document.getElementById("bubbles3");
+        const bubbleScreen = document.getElementById("bubble-screen");
+        const bubbles = [];
+        
+        function createBubble() {
+            let bubble = document.createElement("div");
+            bubble.classList.add("bubble3");
             let size = Math.random() * 80 + 40;
             bubble.style.width = `${size}px`;
             bubble.style.height = `${size}px`;
