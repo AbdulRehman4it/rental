@@ -1,4 +1,5 @@
 <?php
+$webtitle = 'Home';
 require_once './inc/header.php';
 ?>
 <body class="overflow-x-hidden ">

@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companion Page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<?php
+$webtitle = 'Companion';
+require_once './inc/header.php';
+?>
 <body>
          <!-- navbar section  -->
          <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 h-full" style="background-image: url(../build/img/combg.png);">

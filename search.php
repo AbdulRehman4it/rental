@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/style.css">
-     <!-- slider -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
 
-    <title>Search Result</title>
-</head>
+<?php
+$webtitle = 'Search|Property';
+require_once './inc/header.php';
+?>
 <body class="bg-[#EEEEEE]">
 
   <section class="2xl:px-20 xl:px-10 px-5">
