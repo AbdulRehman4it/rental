@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+<?php
+require_once './inc/header.php';
+?>
 <body class="overflow-x-hidden ">
     <div id="bubble-screen" class="fixed top-0 left-0 h-screen w-screen bg-[#EEEEEE] overflow-hidden transition-transform duration-1000 flex items-center justify-center">
         <div id="bubbles" class="absolute w-full h-full" >
@@ -91,7 +85,7 @@
     
         <!-- Hero Section -->
         <div class="xl:pt-60 pt-20 text-center">
-            <p class="2xl:text-[44px] xl:text-4xl md:text-3xl text-2xl uppercase text-[#F5F5F5] italic ">Your next chapter begins here</p>
+            <p class="2xl:text-[44px] xl:text-4xl md:text-3xl text-2xl capitalize text-[#F5F5F5] italic ">Your next chapter begins here</p>
             <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light pt-2">Your <span class="italic font-bold">Perfect</span> Home Awaits</h1>
             <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Explore thousands of listings and find your dream flat or a compatible roommate with ease.</p>
            <a href="companion.html"> <button class="bg-[#FFC300] px-8 py-4 mt-8 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
