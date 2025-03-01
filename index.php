@@ -169,7 +169,7 @@ require_once './inc/header.php';
         function createBubble(index) {
             let bubble = document.createElement("div");
             bubble.classList.add("bubble");
-            let size = 60; // Fixed size for all bubbles
+            let size = 200; // Fixed size for all bubbles
             bubble.style.width = `${size}px`;
             bubble.style.height = `${size}px`;
             bubble.style.backgroundImage = bubbleImages[index];
