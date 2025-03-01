@@ -3,12 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body>
-    <script>
+<body class="bg-[#EEEEEE] overflow-x-hidden">
+
+    <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[1080px] h-[700px]" style="background-image: url(../build/img/BG.png);">
+        <nav class="pt-10 relative">
+            <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
+                <!-- Logo -->
+                <div>
+                    <a href="index.html">
+                    <img src="img/Logo2.png" alt="Company Logo">
+                </a>
+                </div>
+    
+               
+                <div class="hidden lg:flex">
+                    <ul class="flex xl:gap-10 gap-4">
+                        <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
+                        <li><a href="search.html" class="text-[#838383] xl:text-base text-sm font-medium">Properties</a></li>
+                        <li><a href="companion.html" class="text-[#838383] xl:text-base text-sm font-medium">Companion</a></li>
+                        
+                        <!-- <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li> -->
+                        <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign Up Button (Desktop) -->
+                <div class="hidden lg:block">
+                    <a href="signup.html">
+                    <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
+                        <i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp; Sign up
+                    </button>
+                </a>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-[#838383] focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
+                <div class="flex justify-between items-center p-5">
+                    <a href="index.html">
+                    <img src="../build/img/Logo2.png" alt="Company Logo">
+                </a>
+                    <button id="close-btn" class="text-[#838383] text-2xl">
+                        <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
+                    </button>
+                </div>
+                <ul class="text-center space-y-6 mt-10">
+                    <!-- <li><a href="index.html" class="text-[#838383] text-lg font-medium">How It Works</a></li> -->
+                    <li><a href="search.html" class="text-[#838383] text-lg font-medium">Properties</a></li>
+                    <li><a href="companion.html" class="text-[#838383] text-lg font-medium">Companion</a></li>
+                    <!-- <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+                    <li><a href="profile.html" class="text-[#838383] text-lg font-medium">Testimonials</a></li> -->
+                    <li><a href="contact.html" class="text-[#838383] text-lg font-medium">Contact Us</a></li>
+                    <li>
+                        <a href="signup.html">
+                        <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4"> <i class="fa-solid fa-circle-user"></i>&nbsp; Sign up</button>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="xl:pt-60 pt-20 text-center">
+            <p class="2xl:text-[44px] xl:text-4xl md:text-3xl text-2xl uppercase text-[#F5F5F5] italic ">Your next chapter begins here</p>
+            <h1 class="2xl:text-[120px] xl:text-8xl text-5xl text-white font-light pt-2">Your <span class="italic font-bold">Perfect</span> Home Awaits</h1>
+            <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Explore thousands of listings and find your dream flat or a compatible roommate with ease.</p>
+           <a href="companion.html"> <button class="bg-[#FFC300] px-8 py-4 mt-8 rounded-[20px] text-white text-lg">Get Started &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+    </section>
+    
+  
+    <!-- find your name  -->
+
+    <div class="-mt-20 bg-white shadow-md rounded-[20px] p-8 xl:mx-20 lg:mx-10 mx-5">
+        <h2 class="text-xl font-medium text-gray-900 mb-3">Find Your Next Home</h2>
+        <div class="flex md:flex-row flex-col gap-4 md:gap-0 items-center ">
+            <!-- Search Input -->
+            <div class="flex items-center w-full bg-[#EEEEEE] rounded-full px-4 py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 10A7 7 0 1 0 10 17a7 7 0 0 0 7-7z"></path>
+                </svg>
+                <input type="text" placeholder="Search" class="w-full bg-[#EEEEEE] outline-none px-3 text-gray-600 placeholder-gray-500">
+            </div>
+            <!-- Filter Button (Matching Image) -->
+            <button class="bg-[#EEEEEE] p-3 rounded-2xl mx-2 border border-gray-300 flex items-center justify-center shadow-sm hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6h4m-2-2v4m0 4v4m6-6H4"></path>
+                </svg>
+            </button>
+            <!-- Search Button -->
+            <button class="bg-[#FFC300] text-white xl:px-36 px-20 py-3 rounded-full font-medium">
+                Search
+            </button>
+        </div>
+    </div>
+
+<!-- welcom flat section  -->
+<section class="lg:pt-32 lg:pb-36 pb-12 xl:px-20 lg:px-10 px-5 pt-12">
+    <div class="">
+        <h1 class=" text-center 2xl:text-8xl xl:text-7xl lg:text-5xl text-4xl font-light text-[#3B3B3B] gap-2 md:gap-0" >Welcome to <span class="italic text-[#FFC300] font-bold">KosyKeys!</span></h1>
+        <p class="2xl:text-[34px] xl:text-2xl text-xl font-normal 2xl:leading-[74px] xl:leading-[64px] leading-[45px] pt-5 text-center text-[#838383]">Finding your next home has never been this easy! Whether you're searching for the perfect place or <span class="text-[#3B3B3B]"> the ideal roommate who shares your lifestyle,</span> KosyKeys makes it effortless.</p>
+        <div class="text-center pt-8">
+            <p class="italic text-[#838383] 2xl:text-3xl lg:text-2xl text-xl uppercase">Browse verified listings <span class="inline-block align-middle mx-3"> <img src="img/key.png" class="inline-block" alt=""> </span>Connect with compatible housemates <span class="inline-block align-middle mx-3"> <img src="img/key.png" class="inline-block" alt=""> </span> List your property hassle-free</p>
+        </div>
+        <div class="pt-10">
+            <img src="../build/img/matchimg.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- featured section  -->
+<section class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5 xl:pt-20 pt-10 pb-10 xl:pb-24">
+    <div class="flex justify-between items-center md:flex-row flex-col">
+        <div class="md:w-3/5 w-full">
+            <h1 class="xl:text-[56px] xl:leading-[74px] leading-10 text-4xl font-light text-[#3B3B3B]">
+                Smart, Simple, and Fun—Find Your Perfect Home or Flatmate!
+            </h1>
+            <p class="text-[#838383] xl:text-lg font-normal xl:leading-8 text-base leading-7 pt-4" >
+                At KosyKeys, we make finding a <span class="text-[#3B3B3B]">home or the perfect housemate effortless.</span> Our smart platform helps you search, match, and connect in just a few steps. Whether you're looking for a <span class="text-[#3B3B3B]"> new place to live or someone to share a space with,</span> we provide powerful tools to streamline your journey.
+            </p>
+        </div>
+        <div class="md:w-1/4 w-full pt-5 md:pt-0">
+            <img src="../build/img/tools.png" alt="">
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:pt-20 pt-10 xl:gap-10 gap-4">
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold text-[#3B3B3B]">Search & Discover</h1>
+            <p class="text-base leading-8 text-[#838383]">Browse verified listings tailored to your preferences.</p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold text-[#3B3B3B]">Swipe to Match</h1>
+            <p class="text-base leading-8 text-[#838383]">Looking for a home or a roommate? <span class="text-[#3B3B3B] font-semibold">Swipe right</span> on properties and people that match your vibe <span class="text-[#3B3B3B] font-semibold">—it’s that easy!</span></p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold text-[#3B3B3B]">Real-Time Notifications</h1>
+            <p class="text-base leading-8 text-[#838383]">Never miss out! Get <span class="text-[#3B3B3B] font-semibold">instant alerts</span> for new listings, matches, and messages so you’re always ahead in your search.</p>
+        </div>
+        <div class=" border-2 shadow-lg rounded-[30px] p-8">
+            <h1 class="text-2xl font-semibold text-[#3B3B3B]">Secure Communication</h1>
+            <p class="text-base leading-8 text-[#838383]">Chat with landlords and roommates <span class="text-[#3B3B3B] font-semibold">safely</span> through our built-in messaging system. No spam, <span class="text-[#3B3B3B] font-semibold">no hassle—just real connections.</span></p>
+        </div>
+    </div>
+</section>
+
+    <!-- join section  -->
+<section class="bg-cover bg-center xl:px-20 lg:px-10 px-5" style="background-image: url(img/communitybg.png);">
+    <div class=" lg:py-32 py-24 text-center">
+        <h1 class="2xl:text-[120px] 2xl:leading-[130px] xl:text-8xl text-5xl text-white font-light">Start your journey now and find a home that <span class="italic font-bold">truly fits </span> you!</h1>
+        <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Sign up now and take the first step toward a stress-free home search.</p>
+       <a href="companion.html"> <button class="bg-[#FFC300] px-8 py-4 md:mt-16 mt-10 rounded-[20px] text-white text-lg">Find Your Match! &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+</section>
+
+<!-- footer  -->
+<footer class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5">
+    <div class="grid items-center lg:grid-cols-3 md:grid-cols-3 grid-cols-1 justify-center text-center md:text-start 2xl:gap-60 xl:gap-40 gap-10 py-14">
+        <div>
+            <div>
+                <img src="../build/img/footerlogo.png" alt="">
+            </div>
+            <p class="xl:text-xl text-sm text-[#838383] pt-5">Your Journey to the Perfect Home Starts Today.</p>
+        </div>
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold">Contact Information</h1>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-envelope text-[#FFC300]"></i> &nbsp;support@Flatmatch.com</p>
+            <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-phone  text-[#FFC300]"></i> &nbsp;1-800-000-0000</p>
+            <hr class="text-black h-2 my-6">
+            <div class="text-2xl md:space-x-6 space-x-3">
+                <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
+                <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
+                <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
+                <i class="fa-brands fa-twitter text-[#FFC300]"></i>
+            </div>
+        </div>
         
-        window.location.href = "./build/index.html"; 
-    </script>
+        <div>
+            <h1 class="xl:text-[22px] text-lg font-semibold ">Newsletter</h1>
+            <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
+
+           
+<div class="relative md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg mt-4">
+  
+<input type="text" class="w-full pl-2 xl:py-3 py-1 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none" placeholder="Enter Your Enroll Here" />
+  <button
+    class="absolute right-1 top-1 bottom-1 xl:px-6 lg:px-3 px-2 bg-[#FFC300] text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FFC300] md:text-sm lg:text-base xl:text-lg text-lg:"> Subscribe
+  </button>
+</div>
+
+            
+        </div>
+    </div>
+    
+</footer>
+
+<div class="bg-[#3B3B3B] py-2 flex justify-between xl:px-20 lg:px-10 px-5">
+    <div>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm">© 2025 FaltMatch</p>
+    </div>
+    <div class="flex justify-between gap-6">
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline ">Privacy Policy</p>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">Term of Services</p>
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.remove('translate-y-[-100%]');
+        menu.classList.add('translate-y-0');
+        menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
+    });
+
+    closeBtn.addEventListener('click', () => {
+        menu.classList.remove('translate-y-0');
+        menu.classList.add('translate-y-[-100%]');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+            menu.classList.add('translate-y-[-100%]');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        }
+    });
+</script>
+
+    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
 </body>
 </html>
