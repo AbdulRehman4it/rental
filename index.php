@@ -153,12 +153,13 @@ require_once './inc/header.php';
     <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
  <!-- bubbles  -->
  <script>
-   document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const bubbleContainer = document.getElementById("bubbles");
     const bubbleScreen = document.getElementById("bubble-screen");
+    const newPage = document.getElementById("new-page");
     const bubbles = [];
-    
-    // Array of background images for bubbles
+
+    // Background images for 10 bubbles
     const bubbleImages = [
         "url('./img/p1.png')",
         "url('./img/p2.png')",
@@ -172,7 +173,7 @@ require_once './inc/header.php';
         "url('./img/p10.png')"
     ];
 
-    // Array of URLs to navigate when each bubble is clicked
+    // Navigation links for each bubble
     const bubbleLinks = [
         "./contact.php",
         "./companion.php",
@@ -183,7 +184,7 @@ require_once './inc/header.php';
         "./listroom.php",
         "./search.php",
         "./signup.php",
-        "./contact.php"
+        "./about.php"
     ];
 
     function createBubble(index) {
@@ -216,7 +217,7 @@ require_once './inc/header.php';
         });
     }
 
-    // Create exactly 5 bubbles
+    // Create exactly 10 bubbles
     for (let i = 0; i < 10; i++) {
         createBubble(i);
     }
@@ -237,6 +238,19 @@ require_once './inc/header.php';
     }
 
     animateBubbles();
+
+    // Scroll effect - hides bubble screen when scrolling
+    let scrolled = false;
+    window.addEventListener("scroll", () => {
+        if (!scrolled) {
+            bubbleScreen.style.transform = "translateY(-100%)";
+            setTimeout(() => {
+                bubbleScreen.style.display = "none"; // Hide after animation
+                newPage.classList.add("block"); // Ensure new content is visible
+            }, 1000);
+            scrolled = true;
+        }
+    });
 });
 
 </script>
