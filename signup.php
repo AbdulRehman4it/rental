@@ -17,12 +17,12 @@
 
 </head>
 <body class="bg-[#F5F5F5]">
-<?php  
-    require_once './inc/nav.php';
-?>
+
 <section>
     <div class="flex lg:flex-row flex-col  items-center justify-between px-10 py-10 gap-10">
-        
+    <?php  
+    require_once './inc/nav.php';
+?>  
 
 <!-- Swiper -->
 <div class="swiper mySwiper lg:w-1/2 w-full h-10">
