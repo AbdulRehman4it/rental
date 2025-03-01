@@ -2,8 +2,8 @@
             <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
                 <!-- Logo -->
                 <div>
-                    <a href="index.html">
-                    <img src="img/Logo2.png" alt="Company Logo">
+                    <a href="index.php">
+                    <img src="./img/Logo2.png" alt="Company Logo">
                 </a>
                 </div>
     
