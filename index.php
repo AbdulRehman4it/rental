@@ -161,16 +161,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Background images for 10 bubbles
     const bubbleImages = [
-        "url('./img/p1.png')",
-        "url('./img/p2.png')",
-        "url('./img/p3.png')",
-        "url('./img/p4.png')",
-        "url('./img/p5.png')",
-        "url('./img/p6.png')",
-        "url('./img/p7.png')",
-        "url('./img/p8.png')",
-        "url('./img/p9.png')",
-        "url('./img/p10.png')"
+        "url('./img/p1.jpg')",
+        "url('./img/p2.jpg')",
+        "url('./img/p3.jpg')",
+        "url('./img/p4.jpg')",
+        "url('./img/p5.jpg')",
+        "url('./img/p6.jpg')",
+        "url('./img/p7.jpg')",
+        "url('./img/p8.jpg')",
+        "url('./img/p9.jpg')",
+        "url('./img/p10.jpg')"
     ];
 
     // Navigation links for each bubble
