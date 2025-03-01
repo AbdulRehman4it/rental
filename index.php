@@ -253,7 +253,7 @@ window.addEventListener("scroll", () => {
             setTimeout(() => {
                 const newPage = document.getElementById("new-page");
                 window.scrollTo({
-                    top: newPage.offsetTop + 100, // Scroll 100px down from the top of new-page
+                    top: newPage.offsetTop, // Scroll 100px down from the top of new-page
                     behavior: "smooth"
                 });
             }, 500); // Delay to make it feel more natural
