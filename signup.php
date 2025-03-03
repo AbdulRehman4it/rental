@@ -17,7 +17,7 @@
 
 </head>
 <body class="bg-[#F5F5F5]">
-<section class=" 2xl:px-20 xl:px-10 px-5 " >
+<section class=" 2xl:px-20 xl:px-10 px-5" >
    <?php  
     require_once './inc/nav.php';
 ?>
@@ -29,11 +29,11 @@
 
 <!-- Swiper -->
 <div class="swiper mySwiper lg:w-1/2 w-full h-10 mt-8">
-    <div class="flex justify-between items-center -mb-14 -z-0">
+    <div class="flex justify-between items-center absolute z-[110] lg:px-10 px-5 py-10 gap-10">
         <div class="text-white font-bold text-xl flex items-center">
             <img src="./image/logo.png" alt="">
         </div>
-        <button class="bg-transparent border border-white text-white px-4 py-2 rounded-lg text-sm">Back to website →</button>
+        <button class="bg-transparent border border-white text-white px-4 py-2 rounded-lg text-sm ml-5 md:ml-20 lg:ml-6 xl:ml-20">Back to website →</button>
     </div>
     <div class="swiper-wrapper  rounded-3xl">
       <div class="swiper-slide"><img src="./image/BG.png" class="rounded-2xl" alt=""></div>

@@ -83,7 +83,7 @@ require_once './inc/header.php';
                   <p class="text-[#838383] xl:text-base text-sm mt-3">
                       <i class="fa-solid fa-location-dot"></i> Brooklyn, NY - Williamsburg
                   </p>
-                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$950/month</p>
+                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;950/month</p>
                   <div class="mt-6 gap-4 flex items-center">
                       <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                           <i class="fa-solid fa-eye"></i> Explore This Home
@@ -111,7 +111,7 @@ require_once './inc/header.php';
                   <p class="text-[#838383] xl:text-base text-sm mt-3">
                       <i class="fa-solid fa-location-dot"></i> San Francisco, CA - Mission Bay
                   </p>
-                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$2,500/month</p>
+                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;2,500/month</p>
                   <div class="mt-6 gap-4 flex items-center">
                       <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                           <i class="fa-solid fa-eye"></i> Explore This Home
@@ -139,7 +139,7 @@ require_once './inc/header.php';
                   <p class="text-[#838383] xl:text-base text-sm mt-3">
                       <i class="fa-solid fa-location-dot"></i> Austin, TX - Barton Hills
                   </p>
-                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$3,300/month</p>
+                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;3,300/month</p>
                   <div class="mt-6 gap-4 flex items-center">
                       <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                           <i class="fa-solid fa-eye"></i> Explore This Home
@@ -167,7 +167,7 @@ require_once './inc/header.php';
                   <p class="text-[#838383] xl:text-base text-sm mt-3">
                       <i class="fa-solid fa-location-dot"></i> Chicago, IL - Lincoln Park
                   </p>
-                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$1,100/month</p>
+                  <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">	&#163;1,100/month</p>
                   <div class="mt-6 gap-4 flex items-center">
                       <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                           <i class="fa-solid fa-eye"></i> Explore This Home
@@ -196,7 +196,7 @@ require_once './inc/header.php';
                 <p class="text-[#838383] xl:text-base text-sm mt-3">
                     <i class="fa-solid fa-location-dot"></i> <SPAN class="text-[#3B3B3B]">Location:</SPAN> Seattle, WA - Capitol Hill
                 </p>
-                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$950/month</p>
+                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;950/month</p>
                 <div class="mt-6 gap-4 flex items-center">
                     <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                         <i class="fa-solid fa-eye"></i> Explore This Home
@@ -224,7 +224,7 @@ require_once './inc/header.php';
                 <p class="text-[#838383] xl:text-base text-sm mt-3">
                     <i class="fa-solid fa-location-dot"></i> <SPAN class="text-[#3B3B3B]">Location:</SPAN> Miami, FL - South Beach
                 </p>
-                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$3,300/month</p>
+                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;3,300/month</p>
                 <div class="mt-6 gap-4 flex items-center">
                     <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                         <i class="fa-solid fa-eye"></i> Explore This Home
@@ -252,7 +252,7 @@ require_once './inc/header.php';
                 <p class="text-[#838383] xl:text-base text-sm mt-3">
                     <i class="fa-solid fa-location-dot"></i> <SPAN class="text-[#3B3B3B]">Location:</SPAN> 1 Bed, 1 Bath, Close to Public Transport, Parking
                 </p>
-                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$1,200/month</p>
+                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;1,200/month</p>
                 <div class="mt-6 gap-4 flex items-center">
                     <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                         <i class="fa-solid fa-eye"></i> Explore This Home
@@ -280,7 +280,7 @@ require_once './inc/header.php';
                 <p class="text-[#838383] xl:text-base text-sm mt-3">
                     <i class="fa-solid fa-location-dot"></i> <SPAN class="text-[#3B3B3B]">Location:</SPAN>Boston, MA - Back Bay
                 </p>
-                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$1,750/month</p>
+                <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">&#163;1,750/month</p>
                 <div class="mt-6 gap-4 flex items-center">
                     <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
                         <i class="fa-solid fa-eye"></i> Explore This Home

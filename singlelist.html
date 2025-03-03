@@ -1,441 +1,755 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single List</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-[#EEEEEE] overflow-x-hidden">
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-[#EEEEEE] overflow-x-hidden">
     <!-- navbar section  -->
     <section class="2xl:px-20 xl:px-10 px-5">
+      <nav class="pt-10 relative">
+        <div
+          class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5"
+        >
+          <!-- Logo -->
+          <div>
+            <a href="index.html">
+              <img src="../build/img/Logo2.png" alt="Company Logo" />
+            </a>
+          </div>
 
-        <nav class="pt-10 relative">
-          <div class="flex items-center justify-between rounded-[30px] bg-white px-5 py-5">
-              <!-- Logo -->
-              <div>
-                  <a href="index.html">
-                  <img src="../build/img/Logo2.png" alt="Company Logo">
-              </a>
-              </div>
-    
-              <!-- Desktop Menu -->
-              <div class="hidden lg:flex">
-                  <ul class="flex xl:gap-10 gap-4">
-                      <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
-                      <li><a href="search.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Properties</a></li>
-                      <li><a href="companion.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Companion</a></li>
-                      <!-- <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>                  <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li> -->
-                      <li><a href="contact.html" class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]">Contact Us</a></li>
-                  </ul>
-              </div>
-    
-              <!-- Sign Up Button (Desktop) -->
-              <div class="hidden lg:block">
-                  <a href="signup.html">
-                  <button class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg">
-                    <i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp; Sign in
-                  </button>
-              </a>
-              </div>
-    
-              <!-- Mobile Menu Button -->
-              <div class="lg:hidden">
-                  <button id="menu-btn" class="text-[#838383] focus:outline-none">
-                      <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i> <!-- Hamburger Icon -->
-                  </button>
-              </div>
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex">
+            <ul class="flex xl:gap-10 gap-4">
+              <!-- <li><a href="index.html" class="text-[#838383] xl:text-base text-sm font-medium">How It Works</a></li> -->
+              <li>
+                <a
+                  href="search.html"
+                  class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]"
+                  >Properties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="companion.html"
+                  class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]"
+                  >Companion</a
+                >
+              </li>
+              <!-- <li><a href="singlelist.html" class="text-[#838383] xl:text-base text-sm font-medium">Find a home</a></li>                  <li><a href="profile.html" class="text-[#838383] xl:text-base text-sm font-medium">Testimonials</a></li> -->
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-[#838383] xl:text-base text-sm font-medium hover:text-[#FFC300]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
           </div>
-    
-          <!-- Mobile Menu (Hidden by Default) -->
-          <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300">
-              <div class="flex justify-between items-center p-5">
-                <a href="index.html">
-                    <img src="../build/img/Logo2.png" alt="Company Logo">
-                </a>
-                  <button id="close-btn" class="text-[#838383] text-2xl">
-                      <i class="fa-solid fa-xmark"></i> <!-- Close Icon -->
-                  </button>
-              </div>
-              <ul class="text-center space-y-6 mt-10">
-                  <!-- <li><a href="index.html" class="text-[#838383] text-lg font-medium">How It Works</a></li> -->
-                  <li><a href="search.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Properties</a></li>
-                  <li><a href="companion.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Companion</a></li>
-                  <!-- <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
+
+          <!-- Sign Up Button (Desktop) -->
+          <div class="hidden lg:block">
+            <a href="signup.html">
+              <button
+                class="bg-[#FFC300] xl:px-12 xl:py-4 px-8 py-2 rounded-[20px] text-white text-lg"
+              >
+                <i class="fa-solid fa-circle-user"></i>&nbsp;&nbsp; Sign in
+              </button>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden">
+            <button id="menu-btn" class="text-[#838383] focus:outline-none">
+              <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+              <!-- Hamburger Icon -->
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div
+          id="mobile-menu"
+          class="fixed top-0 left-0 w-full h-full bg-white shadow-lg translate-y-[-100%] transition-transform duration-300"
+        >
+          <div class="flex justify-between items-center p-5">
+            <a href="index.html">
+              <img src="../build/img/Logo2.png" alt="Company Logo" />
+            </a>
+            <button id="close-btn" class="text-[#838383] text-2xl">
+              <i class="fa-solid fa-xmark"></i>
+              <!-- Close Icon -->
+            </button>
+          </div>
+          <ul class="text-center space-y-6 mt-10">
+            <!-- <li><a href="index.html" class="text-[#838383] text-lg font-medium">How It Works</a></li> -->
+            <li>
+              <a
+                href="search.html"
+                class="text-[#838383] text-lg font-medium hover:text-[#FFC300]"
+                >Properties</a
+              >
+            </li>
+            <li>
+              <a
+                href="companion.html"
+                class="text-[#838383] text-lg font-medium hover:text-[#FFC300]"
+                >Companion</a
+              >
+            </li>
+            <!-- <li><a href="singlelist.html" class="text-[#838383] text-lg font-medium">Find a home</a></li>
                   <li><a href="profile.html" class="text-[#838383] text-lg font-medium">Testimonials</a></li> -->
-                  <li><a href="contact.html" class="text-[#838383] text-lg font-medium hover:text-[#FFC300]">Contact Us</a></li>
-                  <li>
-                    <a href="signup.html">
-                      <button class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4"><i class="fa-solid fa-circle-user"></i> &nbsp;Sign in</button>
-                  </a>
-                  </li>
-              </ul>
-          </div>
+            <li>
+              <a
+                href="contact.html"
+                class="text-[#838383] text-lg font-medium hover:text-[#FFC300]"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="signup.html">
+                <button
+                  class="bg-[#FFC300] px-8 py-2 rounded-[20px] text-white text-lg w-3/4"
+                >
+                  <i class="fa-solid fa-circle-user"></i> &nbsp;Sign in
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </section>
-    
+
     <!-- image section  -->
     <section class="xl:pt-20 pt-10 xl:px-20 lg:px-10 px-5">
-        <div class="flex md:gap-7 gap-4">
-            <div>
-                <img src="../build/img/singleimg.png" alt="">
-            </div>
-            <div class="lg:space-y-6 md:space-y-4 space-y-2">
-                <div>
-                    <img src="../build/img/single1.png" alt="">
-                </div>
-                <div>
-                    <img src="../build/img/single2.png" alt="">
-                </div>
-                <div>
-                    <img src="../build/img/single3.png" alt="">
-                </div>
-            </div>
+      <div class="flex md:gap-7 gap-4">
+        <div>
+          <img src="../build/img/singleimg.png" alt="" />
         </div>
+        <div class="lg:space-y-6 md:space-y-4 space-y-2">
+          <div>
+            <img src="../build/img/single1.png" alt="" />
+          </div>
+          <div>
+            <img src="../build/img/single2.png" alt="" />
+          </div>
+          <div>
+            <img src="../build/img/single3.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- information modern desighn section  -->
     <section class="xl:px-20 lg:px-10 px-5 xl:pt-16 pt-10">
-        <div class="flex lg:flex-row flex-col 2xl:gap-14 xl:gap-10 gap-5">
+      <div class="flex lg:flex-row flex-col 2xl:gap-14 xl:gap-10 gap-5">
         <div class="lg:w-3/5 w-full">
-            <div class="flex md:flex-row flex-col justify-between">
-                <div>
-                <h1 class="text-[#3B3B3B] 2xl:text-[58px] xl:text-5xl text-4xl font-light 2xl:leading-[72px] xl:leading-[64px] leading-[45px]">Camden Road
-                     <br> London N7</h1>
-                <p class="text-[#838383] xl:text-xl text-base font-normal pt-4"><i class="fa-solid fa-location-dot"></i> Address: 123 Main St, Downtown Area</p>
+          <div class="flex md:flex-row flex-col justify-between">
+            <div>
+              <h1
+                class="text-[#3B3B3B] 2xl:text-[58px] xl:text-5xl text-4xl font-light 2xl:leading-[72px] xl:leading-[64px] leading-[45px]"
+              >
+                Camden Road <br />
+                London N7
+              </h1>
+              <p class="text-[#838383] xl:text-xl text-base font-normal pt-4">
+                <i class="fa-solid fa-location-dot"></i> Address: 123 Main St,
+                Downtown Area
+              </p>
             </div>
             <div class="pt-5 xl:space-x-4 space-x-2">
-                <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"><i class="fa-solid fa-share-nodes text-[#FFC300] xl:text-3xl text-xl"></i></a>
-                <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"><i class="fa-solid fa-calendar-days  text-[#FFC300] xl:text-3xl text-xl"></i></a>
-                <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"><i class="fa-solid fa-bookmark text-[#FFC300] xl:text-3xl text-xl"></i></a>
+              <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"
+                ><i
+                  class="fa-solid fa-share-nodes text-[#FFC300] xl:text-3xl text-xl"
+                ></i
+              ></a>
+              <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"
+                ><i
+                  class="fa-solid fa-calendar-days text-[#FFC300] xl:text-3xl text-xl"
+                ></i
+              ></a>
+              <a href="" class="bg-[#F5F5F5] xl:p-5 p-4 rounded-2xl"
+                ><i
+                  class="fa-solid fa-bookmark text-[#FFC300] xl:text-3xl text-xl"
+                ></i
+              ></a>
             </div>
+          </div>
+
+          <div class="xl:pt-12 pt-6">
+            <p class="xl:text-[42px] text-3xl font-light">
+              <span class="text-[#FFC300] font-semibold">	&#163;1,500/</span>month for
+              rent
+            </p>
+          </div>
+
+          <div
+            class="xl:pt-12 pt-6 grid 2xl:grid-cols-6 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-4 grid-cols-2 gap-4"
+          >
+            <div class="flex items-center gap-2">
+              <img src="../build/img/strech.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">
+                Size: 1,200 sq ft
+              </p>
             </div>
-
-            <div class="xl:pt-12 pt-6">
-                <p class="xl:text-[42px] text-3xl font-light"><span class="text-[#FFC300] font-semibold">$1,500/</span>month for rent</p>
+            <div class="flex items-center gap-2">
+              <img src="../build/img/bedroom.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">2 Bedrooms</p>
             </div>
-
-            <div class="xl:pt-12 pt-6 grid 2xl:grid-cols-6 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-4 grid-cols-2  gap-4">
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/strech.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">Size: 1,200 sq ft</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/bedroom.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">2 Bedrooms</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/bathroom.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">1 Bathroom</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/parking.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">Parking</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/parking1.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">Parking</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <img src="../build/img/balcony.png" alt="">
-                    <p class="text-[#838383] md:text-base text-sm ">Balcony</p>
-                </div>
+            <div class="flex items-center gap-2">
+              <img src="../build/img/bathroom.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">1 Bathroom</p>
             </div>
-
-            <div class="pt-12">
-                <h1 class="text-[#3B3B3B] xl:text-[26px] text-xl font-semibold">Detailed Description</h1>
-                <p class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2">Experience urban living at its finest in this beautifully modern 2-bedroom apartment nestled in the heart of Downtown. This residence offers an open-concept layout with 1,200 square feet of sophisticated living space, perfect for both relaxation and entertaining. Enjoy sweeping city views from the private balcony, or unwind in the comfort of the spacious living room that transitions seamlessly into a refined dining area.
-                    The kitchen is a chef's dream, featuring contemporary stainless-steel appliances, quartz countertops, and ample cabinetry, designed to make meal preparation a delight. Both bedrooms offer generous space, complete with built-in closets, while the sleek bathroom boasts modern fixtures and a luxurious soaking tub.</p>
-
-                    <h1 class="text-[#3B3B3B] xl:text-lg text-base font-semibold pt-10">
-                        Key Features
-                    
-                    </h1>
-                    <p class="text-[#3B3B3B] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2">
-                        <li class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7">Year Built/Age: Built in 2015</li>
-                        <li class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7">Furnishing Status: Furnished</li>
-                        <li class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7">Utilities: Central heating, 24-hour water supply, and full electricity backup</li>
-                        <li class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7">Pet Policy: Pets allowed with a deposit</li>
-                        <li class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7">Energy Efficiency Rating: Rated B</li>
-                    </p>
-
-                    <h1 class="text-[#3B3B3B] xl:text-lg text-base font-semibold pt-10">Neighborhood Information</h1>
-                    <p class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2">Located in the heart of the bustling Downtown district, this neighborhood offers an eclectic blend of urban vitality and suburban tranquility. Known for its vibrant arts scene, diverse culinary delights, and friendly community vibe, it caters to a wide range of lifestyle preferences. </p>
-
-                    <div class="pt-10">
-                        <h1 class="text-[#3B3B3B] xl:text-[26px] text-xl font-semibold">Virtual Tour</h1>
-                        <p class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2">Embark on a virtual journey through your potential new home! Our immersive 360-degree virtual tour provides an unparalleled viewing experience, allowing you to explore every room and detail of this stunning apartment from the comfort of your current location.</p>
-                        <div class="pt-5">
-                        <img src="../build/img/virtual.png" alt="">
-                    </div>
-                    </div>
+            <div class="flex items-center gap-2">
+              <img src="../build/img/parking.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">Parking</p>
             </div>
-
-            <div class="pt-10 xl:pb-24 pb-10">
-                <h1 class="text-[#3B3B3B] text-[26px] font-semibold">Navigate with Ease, Discover with Precision</h1>
-                <div style="width: 100% "><iframe width="100%" class="rounded-[30px]" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">dog tracker</a></iframe></div>
+            <div class="flex items-center gap-2">
+              <img src="../build/img/parking1.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">Parking</p>
             </div>
-           
+            <div class="flex items-center gap-2">
+              <img src="../build/img/balcony.png" alt="" />
+              <p class="text-[#838383] md:text-base text-sm">Balcony</p>
+            </div>
+          </div>
+
+          <div class="pt-12">
+            <h1 class="text-[#3B3B3B] xl:text-[26px] text-xl font-semibold">
+              Detailed Description
+            </h1>
+            <p
+              class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2"
+            >
+              Experience urban living at its finest in this beautifully modern
+              2-bedroom apartment nestled in the heart of Downtown. This
+              residence offers an open-concept layout with 1,200 square feet of
+              sophisticated living space, perfect for both relaxation and
+              entertaining. Enjoy sweeping city views from the private balcony,
+              or unwind in the comfort of the spacious living room that
+              transitions seamlessly into a refined dining area. The kitchen is
+              a chef's dream, featuring contemporary stainless-steel appliances,
+              quartz countertops, and ample cabinetry, designed to make meal
+              preparation a delight. Both bedrooms offer generous space,
+              complete with built-in closets, while the sleek bathroom boasts
+              modern fixtures and a luxurious soaking tub.
+            </p>
+
+            <h1 class="text-[#3B3B3B] xl:text-lg text-base font-semibold pt-10">
+              Key Features
+            </h1>
+            <p
+              class="text-[#3B3B3B] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2"
+            >
+              <li
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7"
+              >
+                Year Built/Age: Built in 2015
+              </li>
+              <li
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7"
+              >
+                Furnishing Status: Furnished
+              </li>
+              <li
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7"
+              >
+                Utilities: Central heating, 24-hour water supply, and full
+                electricity backup
+              </li>
+              <li
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7"
+              >
+                Pet Policy: Pets allowed with a deposit
+              </li>
+              <li
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7"
+              >
+                Energy Efficiency Rating: Rated B
+              </li>
+            </p>
+
+            <h1 class="text-[#3B3B3B] xl:text-lg text-base font-semibold pt-10">
+              Neighborhood Information
+            </h1>
+            <p
+              class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2"
+            >
+              Located in the heart of the bustling Downtown district, this
+              neighborhood offers an eclectic blend of urban vitality and
+              suburban tranquility. Known for its vibrant arts scene, diverse
+              culinary delights, and friendly community vibe, it caters to a
+              wide range of lifestyle preferences.
+            </p>
+
+            <div class="pt-10">
+              <h1 class="text-[#3B3B3B] xl:text-[26px] text-xl font-semibold">
+                Virtual Tour
+              </h1>
+              <p
+                class="text-[#838383] xl:text-base text-sm text-normal xl:leading-8 leading-7 pt-2"
+              >
+                Embark on a virtual journey through your potential new home! Our
+                immersive 360-degree virtual tour provides an unparalleled
+                viewing experience, allowing you to explore every room and
+                detail of this stunning apartment from the comfort of your
+                current location.
+              </p>
+              <div class="pt-5">
+                <img src="../build/img/virtual.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-10 xl:pb-24 pb-10">
+            <h1 class="text-[#3B3B3B] text-[26px] font-semibold">
+              Navigate with Ease, Discover with Precision
+            </h1>
+            <div style="width: 100%">
+              <iframe
+                width="100%"
+                class="rounded-[30px]"
+                height="500"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/">dog tracker</a></iframe
+              >
+            </div>
+          </div>
         </div>
 
         <div class="lg:block hidden">
-            <hr class="w-[1px] h-[60%] bg-[#E5E5E5] ">
+          <hr class="w-[1px] h-[60%] bg-[#E5E5E5]" />
         </div>
 
         <!-- form section  -->
         <div class="lg:w-2/5 w-full">
-            <div>
-                <h1 class="text-[#3B3B3B] text-[26px] font-semibold">Contact or Inquiry Form</h1>
-                <p class="text-[#838383] xl:text-base text-sm font-normal xl:leading-8 leading-7">We're here to help you find the perfect home! Use the form below to get in touch with us for any questions or inquiries you may have regarding this property.</p>
-            </div>
-            <form action="" class="flex flex-col space-y-3 pt-5">
-                <input type="text" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Name">
-                <input type="email" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Email Address">
-                <input type="number" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" name="name" placeholder="Your Phone Number">
-                <textarea name="" class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5" id="" rows="5" placeholder="Your Message Here........"></textarea>
+          <div>
+            <h1 class="text-[#3B3B3B] text-[26px] font-semibold">
+              Contact or Inquiry Form
+            </h1>
+            <p
+              class="text-[#838383] xl:text-base text-sm font-normal xl:leading-8 leading-7"
+            >
+              We're here to help you find the perfect home! Use the form below
+              to get in touch with us for any questions or inquiries you may
+              have regarding this property.
+            </p>
+          </div>
+          <form action="" class="flex flex-col space-y-3 pt-5">
+            <input
+              type="text"
+              class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5"
+              id=""
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5"
+              id=""
+              name="name"
+              placeholder="Email Address"
+            />
+            <input
+              type="number"
+              class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5"
+              id=""
+              name="name"
+              placeholder="Your Phone Number"
+            />
+            <textarea
+              name=""
+              class="bg-[#E5E5E5] rounded-[20px] border border-[#E5E5E5] py-5 px-5"
+              id=""
+              rows="5"
+              placeholder="Your Message Here........"
+            ></textarea>
             <div class="pt-10">
-                <button class="bg-[#FFC300] text-white px-16 py-3 rounded-[20px]">Send Inquiry</button>
+              <button class="bg-[#FFC300] text-white px-16 py-3 rounded-[20px]">
+                Send Inquiry
+              </button>
             </div>
-        </form>
-        <div class="flex md:flex-row flex-col items-center gap-6 bg-[#F5F5F5] rounded-[30px] p-7 mt-10">
+          </form>
+          <div
+            class="flex md:flex-row flex-col items-center gap-6 bg-[#F5F5F5] rounded-[30px] p-7 mt-10"
+          >
             <div>
-                <img src="../build/img/owner.png" alt="">
+              <img src="../build/img/owner.png" alt="" />
             </div>
             <div>
-                <h1 class="xl:text-lg text-base text-[#3B3B3B]">Oliver Williams <span class="text-[#838383] font-600 text-xs">Owner</span></h1>
-                <div class="flex justify-between pt-4 gap-10">
-                <p class="text-[#838383] xl:text-sm text-xs"><i class="fa-solid fa-envelope"></i> &nbsp;Oliver Williams4@gmail.com</p>
-                <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
+              <h1 class="xl:text-lg text-base text-[#3B3B3B]">
+                Oliver Williams
+                <span class="text-[#838383] font-600 text-xs">Owner</span>
+              </h1>
+              <div class="flex justify-between pt-4 gap-10">
+                <p class="text-[#838383] xl:text-sm text-xs">
+                  <i class="fa-solid fa-envelope"></i> &nbsp;Oliver
+                  Williams4@gmail.com
+                </p>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"
+                ></i>
+              </div>
+              <div class="flex pt-2 gap-10">
+                <p class="text-[#838383] xl:text-sm text-xs">
+                  <i class="fa-solid fa-phone"></i> &nbsp; 1-800-000-0000
+                </p>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"
+                ></i>
+              </div>
             </div>
-            <div class="flex pt-2 gap-10">
-                <p class="text-[#838383] xl:text-sm text-xs"><i class="fa-solid fa-phone "></i> &nbsp; 1-800-000-0000</p>
-                <i class="fa-solid fa-arrow-up-right-from-square text-[#FFC300]"></i>
-            </div>
-            </div>
+          </div>
         </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <div class="w-full xl:px-20 lg:px-10 px-5 h-2">
-        <hr >
+      <hr />
     </div>
 
-        <!-- cards section  -->
+    <!-- cards section  -->
     <section class="pt-16 2xl:px-20 lg:px-10 px-5">
-        <div>
-            <!-- Section Header -->
-            <h1 class="text-[#3B3B3B] text-[54px] font-light">Explore Similar Properties</h1>
-            <p class="text-[#838383] xl:text-lg text-base leading-7 xl:leading-8 pt-2">Looking for more options? Discover a curated selection of properties that match your preferences. Whether you're searching for a cozy apartment, a spacious family home, or a luxurious penthouse, we have listings that fit your needs. Browse through these handpicked properties to find the perfect place that meets your lifestyle and budget.</p>
-    
-            <!-- Property Cards -->
-            <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 2xl:gap-10 gap-5">
-                <!-- Property 1 -->
-                <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
-                    <div class="relative">
-                        <img src="../build/img/properties1.png" alt="Property 1" class="w-full h-52 object-cover rounded-[25px]">
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="pt-5">
-                        <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">Charming 1-Bedroom Loft</h3>
-                        <p class="text-[#838383] xl:text-base text-sm mt-2">
-                            <strong>Key Features:</strong> 1 Bed, 1 Bath, Exposed Brick, Rooftop Access
-                        </p>
-                        <p class="text-[#838383] xl:text-base text-sm mt-3">
-                            <i class="fa-solid fa-location-dot"></i> Brooklyn, NY - Williamsburg
-                        </p>
-                        <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$950/month</p>
-                        <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> Explore This Home
-                            </button>
-                            <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Property 2 -->
-                <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
-                    <div class="relative">
-                        <img src="../build/img/properties2.png" alt="Property 2" class="w-full h-52 object-cover rounded-[25px]">
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="pt-5">
-                        <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">Modern 3-Bedroom Condo</h3>
-                        <p class="text-[#838383] xl:text-base text-sm mt-2">
-                            <strong>Key Features:</strong> 3 Beds, 2 Baths, Pool, Gym, Secure Parking
-                        </p>
-                        <p class="text-[#838383] xl:text-base text-sm mt-3">
-                            <i class="fa-solid fa-location-dot"></i> San Francisco, CA - Mission Bay
-                        </p>
-                        <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$2,500/month</p>
-                        <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> Explore This Home
-                            </button>
-                            <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Property 3 -->
-                <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
-                    <div class="relative">
-                        <img src="../build/img/properties3.png" alt="Property 3" class="w-full h-52 object-cover rounded-[25px]">
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="pt-5">
-                        <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">Spacious 4-Bedroom House</h3>
-                        <p class="text-[#838383] xl:text-base text-sm mt-2">
-                            <strong>Key Features:</strong> 4 Beds, 3 Baths, Pet Friendly, Backyard
-                        </p>
-                        <p class="text-[#838383] xl:text-base text-sm mt-3">
-                            <i class="fa-solid fa-location-dot"></i> Austin, TX - Barton Hills
-                        </p>
-                        <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$3,300/month</p>
-                        <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> Explore This Home
-                            </button>
-                            <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Property 4 -->
-                <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
-                    <div class="relative">
-                        <img src="../build/img/properties4.png" alt="Property 4" class="w-full h-52 object-cover rounded-[25px]">
-                        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="pt-5">
-                        <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">Elegant Studio Apartment</h3>
-                        <p class="text-[#838383] xl:text-base text-sm mt-2">
-                            <strong>Key Features:</strong> Studio, 1 Bath, In-Unit Laundry, Wi-Fi Included
-                        </p>
-                        <p class="text-[#838383] xl:text-base text-sm mt-3">
-                            <i class="fa-solid fa-location-dot"></i> Chicago, IL - Lincoln Park
-                        </p>
-                        <p class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5">$1,100/month</p>
-                        <div class="mt-6 gap-4 flex items-center">
-                            <button class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]">
-                                <i class="fa-solid fa-eye"></i> Explore This Home
-                            </button>
-                            <button class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"><i class="fa-solid fa-bookmark text-xl"></i></button>
-                        </div>
-                    </div>
-                </div>
+      <div>
+        <!-- Section Header -->
+        <h1 class="text-[#3B3B3B] text-[54px] font-light">
+          Explore Similar Properties
+        </h1>
+        <p
+          class="text-[#838383] xl:text-lg text-base leading-7 xl:leading-8 pt-2"
+        >
+          Looking for more options? Discover a curated selection of properties
+          that match your preferences. Whether you're searching for a cozy
+          apartment, a spacious family home, or a luxurious penthouse, we have
+          listings that fit your needs. Browse through these handpicked
+          properties to find the perfect place that meets your lifestyle and
+          budget.
+        </p>
+
+        <!-- Property Cards -->
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 2xl:gap-10 gap-5">
+          <!-- Property 1 -->
+          <div
+            class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3"
+          >
+            <div class="relative">
+              <img
+                src="../build/img/properties1.png"
+                alt="Property 1"
+                class="w-full h-52 object-cover rounded-[25px]"
+              />
+              <div
+                class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
+              >
+                <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
             </div>
-    
-            <!-- Pagination -->
-            <div class="flex justify-center mt-8 space-x-2">
-                <button class="text-gray-500">&lt;</button>
-                <button class="text-yellow-500 font-bold">1</button>
-                <button class="text-gray-500">2</button>
-                <button class="text-gray-500">3</button>
-                <button class="text-gray-500">4</button>
-                <button class="text-gray-500">&gt;</button>
+            <div class="pt-5">
+              <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">
+                Charming 1-Bedroom Loft
+              </h3>
+              <p class="text-[#838383] xl:text-base text-sm mt-2">
+                <strong>Key Features:</strong> 1 Bed, 1 Bath, Exposed Brick,
+                Rooftop Access
+              </p>
+              <p class="text-[#838383] xl:text-base text-sm mt-3">
+                <i class="fa-solid fa-location-dot"></i> Brooklyn, NY -
+                Williamsburg
+              </p>
+              <p
+                class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5"
+              >
+              &#163;950/month
+              </p>
+              <div class="mt-6 gap-4 flex items-center">
+                <button
+                  class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]"
+                >
+                  <i class="fa-solid fa-eye"></i> Explore This Home
+                </button>
+                <button
+                  class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"
+                >
+                  <i class="fa-solid fa-bookmark text-xl"></i>
+                </button>
+              </div>
             </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div
+            class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3"
+          >
+            <div class="relative">
+              <img
+                src="../build/img/properties2.png"
+                alt="Property 2"
+                class="w-full h-52 object-cover rounded-[25px]"
+              />
+              <div
+                class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
+              >
+                <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+            <div class="pt-5">
+              <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">
+                Modern 3-Bedroom Condo
+              </h3>
+              <p class="text-[#838383] xl:text-base text-sm mt-2">
+                <strong>Key Features:</strong> 3 Beds, 2 Baths, Pool, Gym,
+                Secure Parking
+              </p>
+              <p class="text-[#838383] xl:text-base text-sm mt-3">
+                <i class="fa-solid fa-location-dot"></i> San Francisco, CA -
+                Mission Bay
+              </p>
+              <p
+                class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5"
+              >
+              &#163;2,500/month
+              </p>
+              <div class="mt-6 gap-4 flex items-center">
+                <button
+                  class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]"
+                >
+                  <i class="fa-solid fa-eye"></i> Explore This Home
+                </button>
+                <button
+                  class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"
+                >
+                  <i class="fa-solid fa-bookmark text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div
+            class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3"
+          >
+            <div class="relative">
+              <img
+                src="../build/img/properties3.png"
+                alt="Property 3"
+                class="w-full h-52 object-cover rounded-[25px]"
+              />
+              <div
+                class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
+              >
+                <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+            <div class="pt-5">
+              <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">
+                Spacious 4-Bedroom House
+              </h3>
+              <p class="text-[#838383] xl:text-base text-sm mt-2">
+                <strong>Key Features:</strong> 4 Beds, 3 Baths, Pet Friendly,
+                Backyard
+              </p>
+              <p class="text-[#838383] xl:text-base text-sm mt-3">
+                <i class="fa-solid fa-location-dot"></i> Austin, TX - Barton
+                Hills
+              </p>
+              <p
+                class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5"
+              >
+              &#163;3,300/month
+              </p>
+              <div class="mt-6 gap-4 flex items-center">
+                <button
+                  class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]"
+                >
+                  <i class="fa-solid fa-eye"></i> Explore This Home
+                </button>
+                <button
+                  class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"
+                >
+                  <i class="fa-solid fa-bookmark text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 4 -->
+          <div
+            class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3"
+          >
+            <div class="relative">
+              <img
+                src="../build/img/properties4.png"
+                alt="Property 4"
+                class="w-full h-52 object-cover rounded-[25px]"
+              />
+              <div
+                class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
+              >
+                <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+              </div>
+            </div>
+            <div class="pt-5">
+              <h3 class="font-semibold xl:text-xl text-lg text-[#3B3B3B]">
+                Elegant Studio Apartment
+              </h3>
+              <p class="text-[#838383] xl:text-base text-sm mt-2">
+                <strong>Key Features:</strong> Studio, 1 Bath, In-Unit Laundry,
+                Wi-Fi Included
+              </p>
+              <p class="text-[#838383] xl:text-base text-sm mt-3">
+                <i class="fa-solid fa-location-dot"></i> Chicago, IL - Lincoln
+                Park
+              </p>
+              <p
+                class="font-semibold 2xl:text-4xl xl:text-2xl text-[#3B3B3B] text-lg xl:mt-10 mt-5"
+              >
+              &#163;1,100/month
+              </p>
+              <div class="mt-6 gap-4 flex items-center">
+                <button
+                  class="flex justify-center w-full items-center gap-2 text-[#FFC300] border border-[#FFC300] px-4 py-2 rounded-[10px]"
+                >
+                  <i class="fa-solid fa-eye"></i> Explore This Home
+                </button>
+                <button
+                  class="text-[#FFC300] border border-[#FFC300] p-2 rounded-[8px]"
+                >
+                  <i class="fa-solid fa-bookmark text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button class="text-gray-500">&lt;</button>
+          <button class="text-yellow-500 font-bold">1</button>
+          <button class="text-gray-500">2</button>
+          <button class="text-gray-500">3</button>
+          <button class="text-gray-500">4</button>
+          <button class="text-gray-500">&gt;</button>
+        </div>
+      </div>
     </section>
     <!-- footer  -->
 
     <footer class="bg-[#F5F5F5] xl:px-20 lg:px-10 px-5 xl:mt-12 mt-6">
-        <div class="grid items-center lg:grid-cols-3 md:grid-cols-3 grid-cols-1 justify-center text-center md:text-start 2xl:gap-60 xl:gap-40 gap-10 py-14">
-            <div>
-                <div>
-                    <img src="../build/img/footerlogo.png" alt="">
-                </div>
-                <p class="xl:text-xl text-sm text-[#838383] pt-5">Your Journey to the Perfect Home Starts Today.</p>
-            </div>
-            <div>
-                <h1 class="xl:text-[22px] text-lg font-semibold">Contact Information</h1>
-                <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-envelope text-[#FFC300]"></i> &nbsp;support@Flatmatch.com</p>
-                <p class="xl:text-lg text-sm text-[#838383] pt-5"><i class="fa-solid fa-phone  text-[#FFC300]"></i> &nbsp;1-800-000-0000</p>
-                <hr class="text-black h-2 my-6">
-                <div class="text-2xl md:space-x-6 space-x-3">
-                    <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
-                    <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
-                    <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
-                    <i class="fa-brands fa-twitter text-[#FFC300]"></i>
-                </div>
-            </div>
-            
-            <div>
-                <h1 class="xl:text-[22px] text-lg font-semibold ">Newsletter</h1>
-                <p class="xl:text-base text-sm text-[#838383] pt-5">Sign up today and embark on a journey toward a better living experience </p>
-    
-               
-    <div class="relative md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg mt-4">
-      
-    <input type="text" class="w-full pl-2 xl:py-3 py-1 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none" placeholder="Enter Your Enroll Here" />
-      <button
-        class="absolute right-1 top-1 bottom-1 xl:px-6 lg:px-3 px-2 bg-[#FFC300] text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FFC300] md:text-sm lg:text-base xl:text-lg text-lg:"> Subscribe
-      </button>
-    </div>
-    
-                
-            </div>
+      <div
+        class="grid items-center lg:grid-cols-3 md:grid-cols-3 grid-cols-1 justify-center text-center md:text-start 2xl:gap-60 xl:gap-40 gap-10 py-14"
+      >
+        <div>
+          <div>
+            <img src="../build/img/footerlogo.png" alt="" />
+          </div>
+          <p class="xl:text-xl text-sm text-[#838383] pt-5">
+            Your Journey to the Perfect Home Starts Today.
+          </p>
         </div>
-        
+        <div>
+          <h1 class="xl:text-[22px] text-lg font-semibold">
+            Contact Information
+          </h1>
+          <p class="xl:text-lg text-sm text-[#838383] pt-5">
+            <i class="fa-solid fa-envelope text-[#FFC300]"></i>
+            &nbsp;support@Flatmatch.com
+          </p>
+          <p class="xl:text-lg text-sm text-[#838383] pt-5">
+            <i class="fa-solid fa-phone text-[#FFC300]"></i>
+            &nbsp;1-800-000-0000
+          </p>
+          <hr class="text-black h-2 my-6" />
+          <div class="text-2xl md:space-x-6 space-x-3">
+            <i class="fa-brands fa-square-instagram text-[#FFC300]"></i>
+            <i class="fa-brands fa-linkedin text-[#FFC300]"></i>
+            <i class="fa-brands fa-square-facebook text-[#FFC300]"></i>
+            <i class="fa-brands fa-twitter text-[#FFC300]"></i>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="xl:text-[22px] text-lg font-semibold">Newsletter</h1>
+          <p class="xl:text-base text-sm text-[#838383] pt-5">
+            Sign up today and embark on a journey toward a better living
+            experience 
+          </p>
+
+          <div
+            class="relative md:w-auto w-full bg-[#EEEEEE] rounded-2xl shadow-md p-1.5 transition-all duration-150 ease-in-out hover:scale-105 hover:shadow-lg mt-4"
+          >
+            <input
+              type="text"
+              class="w-full pl-2 xl:py-3 py-1 text-base text-gray-700 bg-transparent rounded-lg focus:outline-none"
+              placeholder="Enter Your Enroll Here"
+            />
+            <button
+              class="absolute right-1 top-1 bottom-1 xl:px-6 lg:px-3 px-2 bg-[#FFC300] text-white font-medium rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FFC300] md:text-sm lg:text-base xl:text-lg text-lg:"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="bg-[#3B3B3B] py-2 flex justify-between xl:px-20 lg:px-10 px-5">
-        <div>
-            <p class="text-[#F5F5F5] xl:text-lg text-sm">© 2025 FaltMatch</p>
-        </div>
-        <div class="flex justify-between gap-6">
-            <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline ">Privacy Policy</p>
-            <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">Term of Services</p>
-        </div>
+      <div>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm">© 2025 FaltMatch</p>
+      </div>
+      <div class="flex justify-between gap-6">
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">
+          Privacy Policy
+        </p>
+        <p class="text-[#F5F5F5] xl:text-lg text-sm hover:underline">
+          Term of Services
+        </p>
+      </div>
     </div>
-    
 
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const menu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
 
-      <!-- JavaScript for Menu Toggle -->
-      <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
-        const menu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-    
-        menuBtn.addEventListener('click', () => {
-            menu.classList.remove('translate-y-[-100%]');
-            menu.classList.add('translate-y-0');
-            menuIcon.classList.replace('fa-bars', 'fa-xmark'); // Change to close icon
-        });
-    
-        closeBtn.addEventListener('click', () => {
-            menu.classList.remove('translate-y-0');
-            menu.classList.add('translate-y-[-100%]');
-            menuIcon.classList.replace('fa-xmark', 'fa-bars'); // Change back to menu icon
-        });
-    
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-                menu.classList.add('translate-y-[-100%]');
-                menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            }
-        });
+      menuBtn.addEventListener("click", () => {
+        menu.classList.remove("translate-y-[-100%]");
+        menu.classList.add("translate-y-0");
+        menuIcon.classList.replace("fa-bars", "fa-xmark"); // Change to close icon
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("translate-y-0");
+        menu.classList.add("translate-y-[-100%]");
+        menuIcon.classList.replace("fa-xmark", "fa-bars"); // Change back to menu icon
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+          menu.classList.add("translate-y-[-100%]");
+          menuIcon.classList.replace("fa-xmark", "fa-bars");
+        }
+      });
     </script>
-    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/a2ada4947c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
