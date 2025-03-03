@@ -292,7 +292,7 @@ require_once './inc/header.php';
     </div>
 
       <!-- Pagination -->
-      <div class="flex justify-center mb-10 space-x-2">
+      <div class="flex justify-center my-10 space-x-2">
           <button class="text-gray-500">&lt;</button>
           <button class="text-yellow-500 font-bold">1</button>
           <button class="text-gray-500">2</button>
