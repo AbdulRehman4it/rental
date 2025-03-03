@@ -68,7 +68,7 @@ require_once './inc/header.php';
           <!-- Property 1 -->
           <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
               <div class="relative">
-                  <img src="../build/img/properties1.png" alt="Property 1" class="w-full h-52 object-cover rounded-[25px]">
+                  <img src="./img/properties1.png" alt="Property 1" class="w-full h-52 object-cover rounded-[25px]">
                   <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
                       <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
@@ -96,7 +96,7 @@ require_once './inc/header.php';
           <!-- Property 2 -->
           <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
               <div class="relative">
-                  <img src="../build/img/properties2.png" alt="Property 2" class="w-full h-52 object-cover rounded-[25px]">
+                  <img src="./img/properties2.png" alt="Property 2" class="w-full h-52 object-cover rounded-[25px]">
                   <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
                       <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
@@ -124,7 +124,7 @@ require_once './inc/header.php';
           <!-- Property 3 -->
           <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
               <div class="relative">
-                  <img src="../build/img/properties3.png" alt="Property 3" class="w-full h-52 object-cover rounded-[25px]">
+                  <img src="./img/properties3.png" alt="Property 3" class="w-full h-52 object-cover rounded-[25px]">
                   <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
                       <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
@@ -152,7 +152,7 @@ require_once './inc/header.php';
           <!-- Property 4 -->
           <div class="bg-[#F5F5F5] text-black rounded-[30px] shadow-lg overflow-hidden xl:p-5 p-3">
               <div class="relative">
-                  <img src="../build/img/properties4.png" alt="Property 4" class="w-full h-52 object-cover rounded-[25px]">
+                  <img src="./img/properties4.png" alt="Property 4" class="w-full h-52 object-cover rounded-[25px]">
                   <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
                       <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
                       <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
@@ -292,7 +292,7 @@ require_once './inc/header.php';
     </div>
 
       <!-- Pagination -->
-      <div class="flex justify-center mt-8 space-x-2">
+      <div class="flex justify-center mb-10 space-x-2">
           <button class="text-gray-500">&lt;</button>
           <button class="text-yellow-500 font-bold">1</button>
           <button class="text-gray-500">2</button>

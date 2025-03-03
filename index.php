@@ -65,7 +65,7 @@ require_once './inc/header.php';
             <p class="italic text-[#838383] 2xl:text-3xl lg:text-2xl text-xl uppercase">Browse verified listings <span class="inline-block align-middle mx-3"> <img src="img/key.png" class="inline-block" alt=""> </span>Connect with compatible housemates <span class="inline-block align-middle mx-3"> <img src="img/key.png" class="inline-block" alt=""> </span> List your property hassle-free</p>
         </div>
         <div class="pt-10">
-            <img src="../build/img/matchimg.png" alt="">
+            <img src="./img/matchimg.png" alt="">
         </div>
     </div>
 </section>
@@ -82,7 +82,7 @@ require_once './inc/header.php';
             </p>
         </div>
         <div class="md:w-1/4 w-full pt-5 md:pt-0">
-            <img src="../build/img/tools.png" alt="">
+            <img src="./img/tools.png" alt="">
         </div>
     </div>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:pt-20 pt-10 xl:gap-10 gap-4">
