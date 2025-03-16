@@ -3,9 +3,9 @@ $webtitle = 'Home';
 require_once './inc/header.php';
 ?>
 <body class="overflow-x-hidden ">
-    <div id="bubble-screen" class="fixed top-0 left-0 h-screen w-screen bg-[#EEEEEE] overflow-hidden transition-transform duration-1000 flex items-center justify-center">
+    <!-- <div id="bubble-screen" class="fixed top-0 left-0 h-screen w-screen bg-[#EEEEEE] overflow-hidden transition-transform duration-1000 flex items-center justify-center">
         <div id="bubbles" class="absolute w-full h-full" >
-            <!-- Dynamically generated bubbles -->
+            
         </div>
       
         <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-4">
@@ -15,7 +15,7 @@ require_once './inc/header.php';
         </div>
     </div>
     
-    <div id="new-page" class=" w-screen ">
+    <div id="new-page" class=" w-screen "> -->
 
     <section class="bg-cover bg-center 2xl:px-20 xl:px-10 px-5 xl:h-[1080px] h-[700px]" style="background-image: url(./img/BG.png);">
    <?php  
@@ -110,7 +110,7 @@ require_once './inc/header.php';
     <div class=" lg:py-32 py-24 text-center">
         <h1 class="2xl:text-[120px] 2xl:leading-[130px] xl:text-8xl text-5xl text-white font-light">Start your journey now and find a home that <span class="italic font-bold">truly fits </span> you!</h1>
         <p class="2xl:text-[26px] xl:text-xl text-lg pt-2 xl:pt-5 text-white">Sign up now and take the first step toward a stress-free home search.</p>
-       <a href="companion.html"> <button class="bg-[#FFC300] px-8 py-4 md:mt-16 mt-10 rounded-[20px] text-white text-lg">Find Your Match! &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
+       <a href="companion.php"> <button class="bg-[#FFC300] px-8 py-4 md:mt-16 mt-10 rounded-[20px] text-white text-lg">Find Your Match! &nbsp;&nbsp; <i class="fa-solid fa-arrow-right"></i></button></a>
     </div>
 </section>
 
